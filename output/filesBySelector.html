@@ -1,0 +1,2358 @@
+
+    <html>
+      <head>
+        <title>Selectors</title>
+        <style>.container{position:relative;width:100%;max-width:960px;margin:0 auto;padding:0 20px;box-sizing:border-box}.column,.columns{width:100%;float:left;box-sizing:border-box}@media (min-width:400px){.container{width:85%;padding:0}}@media (min-width:550px){.container{width:80%}.column,.columns{margin-left:4%}.column:first-child,.columns:first-child{margin-left:0}.one.column,.one.columns{width:4.66666666667%}.two.columns{width:13.3333333333%}.three.columns{width:22%}.four.columns{width:30.6666666667%}.five.columns{width:39.3333333333%}.six.columns{width:48%}.seven.columns{width:56.6666666667%}.eight.columns{width:65.3333333333%}.nine.columns{width:74%}.ten.columns{width:82.6666666667%}.eleven.columns{width:91.3333333333%}.twelve.columns{width:100%;margin-left:0}.one-third.column{width:30.6666666667%}.two-thirds.column{width:65.3333333333%}.one-half.column{width:48%}.offset-by-one.column,.offset-by-one.columns{margin-left:8.66666666667%}.offset-by-two.column,.offset-by-two.columns{margin-left:17.3333333333%}.offset-by-three.column,.offset-by-three.columns{margin-left:26%}.offset-by-four.column,.offset-by-four.columns{margin-left:34.6666666667%}.offset-by-five.column,.offset-by-five.columns{margin-left:43.3333333333%}.offset-by-six.column,.offset-by-six.columns{margin-left:52%}.offset-by-seven.column,.offset-by-seven.columns{margin-left:60.6666666667%}.offset-by-eight.column,.offset-by-eight.columns{margin-left:69.3333333333%}.offset-by-nine.column,.offset-by-nine.columns{margin-left:78%}.offset-by-ten.column,.offset-by-ten.columns{margin-left:86.6666666667%}.offset-by-eleven.column,.offset-by-eleven.columns{margin-left:95.3333333333%}.offset-by-one-third.column,.offset-by-one-third.columns{margin-left:34.6666666667%}.offset-by-two-thirds.column,.offset-by-two-thirds.columns{margin-left:69.3333333333%}.offset-by-one-half.column,.offset-by-one-half.columns{margin-left:52%}}html{font-size:62.5%}body{font-size:1.5em;line-height:1.6;font-weight:400;font-family:"Raleway","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;color:#222}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:2rem;font-weight:300}h1{font-size:4rem;line-height:1.2;letter-spacing:-.1rem}h2{font-size:3.6rem;line-height:1.25;letter-spacing:-.1rem}h3{font-size:3rem;line-height:1.3;letter-spacing:-.1rem}h4{font-size:2.4rem;line-height:1.35;letter-spacing:-.08rem}h5{font-size:1.8rem;line-height:1.5;letter-spacing:-.05rem}h6{font-size:1.5rem;line-height:1.6;letter-spacing:0}@media (min-width:550px){h1{font-size:5rem}h2{font-size:4.2rem}h3{font-size:3.6rem}h4{font-size:3rem}h5{font-size:2.4rem}h6{font-size:1.5rem}}p{margin-top:0}a{color:#1EAEDB}a:hover{color:#0FA0CE}.button,button,input[type="submit"],input[type="reset"],input[type="button"]{display:inline-block;height:38px;padding:0 30px;color:#555;text-align:center;font-size:11px;font-weight:600;line-height:38px;letter-spacing:.1rem;text-transform:uppercase;text-decoration:none;white-space:nowrap;background-color:#fff0;border-radius:4px;border:1px solid #bbb;cursor:pointer;box-sizing:border-box}.button:hover,button:hover,input[type="submit"]:hover,input[type="reset"]:hover,input[type="button"]:hover,.button:focus,button:focus,input[type="submit"]:focus,input[type="reset"]:focus,input[type="button"]:focus{color:#333;border-color:#888;outline:0}.button.button-primary,button.button-primary,input[type="submit"].button-primary,input[type="reset"].button-primary,input[type="button"].button-primary{color:#FFF;background-color:#33C3F0;border-color:#33C3F0}.button.button-primary:hover,button.button-primary:hover,input[type="submit"].button-primary:hover,input[type="reset"].button-primary:hover,input[type="button"].button-primary:hover,.button.button-primary:focus,button.button-primary:focus,input[type="submit"].button-primary:focus,input[type="reset"].button-primary:focus,input[type="button"].button-primary:focus{color:#FFF;background-color:#1EAEDB;border-color:#1EAEDB}input[type="email"],input[type="number"],input[type="search"],input[type="text"],input[type="tel"],input[type="url"],input[type="password"],textarea,select{height:38px;padding:6px 10px;background-color:#fff;border:1px solid #D1D1D1;border-radius:4px;box-shadow:none;box-sizing:border-box}input[type="email"],input[type="number"],input[type="search"],input[type="text"],input[type="tel"],input[type="url"],input[type="password"],textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none}textarea{min-height:65px;padding-top:6px;padding-bottom:6px}input[type="email"]:focus,input[type="number"]:focus,input[type="search"]:focus,input[type="text"]:focus,input[type="tel"]:focus,input[type="url"]:focus,input[type="password"]:focus,textarea:focus,select:focus{border:1px solid #33C3F0;outline:0}label,legend{display:block;margin-bottom:.5rem;font-weight:600}fieldset{padding:0;border-width:0}input[type="checkbox"],input[type="radio"]{display:inline}label>.label-body{display:inline-block;margin-left:.5rem;font-weight:400}ul{list-style:circle inside}ol{list-style:decimal inside}ol,ul{padding-left:0;margin-top:0}ul ul,ul ol,ol ol,ol ul{margin:1.5rem 0 1.5rem 3rem;font-size:90%}li{margin-bottom:1rem}code{padding:.2rem .5rem;margin:0 .2rem;font-size:90%;white-space:nowrap;background:#F1F1F1;border:1px solid #E1E1E1;border-radius:4px}pre>code{display:block;padding:1rem 1.5rem;white-space:pre}th,td{padding:12px 15px;text-align:left;border-bottom:1px solid #E1E1E1}th:first-child,td:first-child{padding-left:0}th:last-child,td:last-child{padding-right:0}button,.button{margin-bottom:1rem}input,textarea,select,fieldset{margin-bottom:1.5rem}pre,blockquote,dl,figure,table,p,ul,ol,form{margin-bottom:2.5rem}.u-full-width{width:100%;box-sizing:border-box}.u-max-full-width{max-width:100%;box-sizing:border-box}.u-pull-right{float:right}.u-pull-left{float:left}hr{margin-top:3rem;margin-bottom:3.5rem;border-width:0;border-top:1px solid #E1E1E1}.container:after,.row:after,.u-cf{content:"";display:table;clear:both}</style>
+        <style>
+          body {
+            padding: 3rem 3rem;
+          }
+          div {
+            display: inline;
+          }
+          details {
+            padding: 1rem 3rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+          }
+          strong {
+            font-size: 2rem;
+          }
+          ul {
+            margin-top: 1rem;
+          }
+          summary {
+            cursor: pointer;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Selectors and the things that use them</h1>
+        
+        <details>
+          <summary><strong>selectContentContext</strong><span>../mono/libs/le-shared/interstitials/src/tracking.ts</span></summary>
+          <ul>
+            <li>useInterstitialTracking: ../mono/libs/le-shared/interstitials/src/tracking.ts</li>
+<li>useMobileAppQRTracking: ../mono/libs/le-shared/interstitials/src/Interstitials/MobileAppQRInterstitial/tracking.tsx</li>
+<li>ModuleGateInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/ModuleGateInterstitial/index.tsx</li>
+<li>useGoalSettingTracking: ../mono/libs/le-shared/interstitials/src/Interstitials/GoalSettingInterstitial/tracking.tsx</li>
+<li>useInterstitialTracking: ../mono/libs/le-shared/interstitials/src/Modals/PaidExclusiveOverlay/tracking/PaidExclusiveOverlayTracking.tsx</li>
+<li>useProExclusiveTracking: ../mono/libs/le-shared/interstitials/src/Modals/ProExclusiveContent/tracking.tsx</li>
+<li>NextProContentInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/NextProContentInterstitial/index.tsx</li>
+<li>useGoalSettingTracking: ../mono/libs/le-shared/interstitials/src/Modals/GoalSettingInterstitial/tracking.tsx</li>
+<li>CodeBlock: ../mono/libs/le-shared/components/src/CodeBlock/Base.tsx</li>
+<li>AssessmentDeck: ../mono/libs/le-shared/redux-scenes/src/practicePack/AssessmentDeck/index.tsx</li>
+<li>usePostQuizReviewTracking: ../mono/libs/le-shared/redux-scenes/src/quiz/PostQuizReviewSummary/usePostQuizReviewTracking.tsx</li>
+<li>ExternalResource: ../mono/libs/le-shared/redux-scenes/src/externalResource/ExternalResource/index.tsx</li>
+<li>AutocompleteCoachmark: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/ToolsTab/ToolsMenu/AutocompleteCoachmark.tsx</li>
+<li>WalkthroughSection: ../mono/libs/le-shared/redux-components/src/GetHelp/WalkthroughSection/index.tsx</li>
+<li>WalkthroughModal: ../mono/libs/le-shared/redux-components/src/GetHelp/WalkthroughModal/index.tsx</li>
+<li>DynamicCalendarExporter: ../mono/libs/le-shared/redux-components/src/DynamicCalendarExporter/index.tsx</li>
+<li>useSyllabusBrowserTracking: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/useSyllabusBrowserTracking.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectUserJWT</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/StudyGroupInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>StudyGroupInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/StudyGroupInterstitial/index.tsx</li>
+<li>OpenAIPromptDisclaimer: ../mono/libs/le-shared/interstitials/src/Modals/OpenAIPromptDisclaimer/index.tsx</li>
+<li>AIAssistantSettingsModal: ../mono/libs/le-shared/interstitials/src/Modals/AIAssistantSettingsModal/index.tsx</li>
+<li>AssessmentDeckSkillsWrapper: ../mono/libs/le-shared/redux-scenes/src/practicePack/AssessmentDeckSkillsWrapper.tsx</li>
+<li>useFetchStudyGroup: ../mono/libs/le-shared/redux-scenes/src/utils/useFetchStudyGroup.ts</li>
+<li>CustomProjectScene: ../mono/libs/le-shared/redux-scenes/src/customProject/index.tsx</li>
+<li>SandboxTypeCardLayout: ../mono/libs/le-shared/redux-scenes/src/sandbox/ChooseSandboxTypePage/SandboxTypeCardLayout.tsx</li>
+<li>useContentItemWithSkills: ../mono/libs/le-shared/redux-scenes/src/helpers/useContentItemWithSkills.ts</li>
+<li>AIChatWidget: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/AIChatWidget/index.tsx</li>
+<li>AIChatAssistant: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/AIChatAssistant/index.tsx</li>
+<li>AIChat: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/AIChat/index.tsx</li>
+<li>useLinkNarrativeWithDocs: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/ExerciseNarrative/useLinkNarrativeWithDocs.ts</li>
+<li>useGetPostQuizReviewData: ../mono/libs/le-shared/redux-components/src/Assessments/hooks/useGetPostQuizReviewData.ts</li>
+<li>useHasFinalSavepoint: ../mono/libs/le-shared/redux-components/src/Assessments/ExecutableCode/useHasFinalSavepoint.ts</li>
+<li>ProjectReviewModal: ../mono/libs/le-shared/redux-components/src/narrative/ProjectReviewMain/ProjectReviewModal.tsx</li>
+<li>ProjectReviewSection: ../mono/libs/le-shared/redux-components/src/narrative/Brief/ProjectReviewSection.tsx</li>
+<li>actions: ../mono/libs/le-shared/redux-components/src/SessionAuthProvider/index.tsx</li>
+<li>ForkButton: ../mono/libs/le-shared/redux-components/src/ForkButton/index.tsx</li>
+<li>FreeResponseQuestionContextProvider: ../mono/libs/le-shared/redux-components/src/FreeResponseQuestion/libs/FreeResponseQuestionContext.tsx</li>
+<li>useFreeResponseQuestionResponseState: ../mono/libs/le-shared/redux-components/src/FreeResponseQuestion/libs/useFreeResponseQuestionResponseState.ts</li>
+<li>Exercises: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/SyllabusBrowserVariant/Exercises/index.tsx</li>
+<li>useLoadSyllabus: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/useLoadSyllabus.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentUser</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/StudyGroupInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>StudyGroupInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/StudyGroupInterstitial/index.tsx</li>
+<li>ShareToStudyGroup: ../mono/libs/le-shared/interstitials/src/Interstitials/SkillsProgressInterstitial/ShareToStudyGroup.tsx</li>
+<li>DefaultContent: ../mono/libs/le-shared/interstitials/src/Interstitials/ContainerCompletionInterstitial/DefaultContent/index.tsx</li>
+<li>OpenAIPromptDisclaimer: ../mono/libs/le-shared/interstitials/src/Modals/OpenAIPromptDisclaimer/index.tsx</li>
+<li>PastDueModal: ../mono/libs/le-shared/interstitials/src/Modals/PastDueModal/index.tsx</li>
+<li>DefaultContent: ../mono/libs/le-shared/interstitials/src/Modals/ContainerCompletionInterstitial/DefaultContent/index.tsx</li>
+<li>MonacoEditor: ../mono/libs/le-shared/components/src/MonacoEditor/index.tsx</li>
+<li>useEditorSettings: ../mono/libs/le-shared/components/src/MonacoEditor/useEditorSettings/index.ts</li>
+<li>useAppHeaderProps: ../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</li>
+<li>UpsellPlanCards: ../mono/libs/le-shared/components/src/UpsellPlanCards/index.tsx</li>
+<li>MeDropdown: ../mono/libs/le-shared/components/src/MeDropdown/index.tsx</li>
+<li>KanbanProjectPage: ../mono/libs/le-shared/redux-scenes/src/kanbanProject/index.tsx</li>
+<li>SmartPractice: ../mono/libs/le-shared/redux-scenes/src/practicePack/SmartPractice/index.tsx</li>
+<li>EnterpriseSandboxHeader: ../mono/libs/le-shared/redux-scenes/src/sandbox/SandboxHeader/EnterpriseSandboxHeader/index.tsx</li>
+<li>Header: ../mono/libs/le-shared/redux-scenes/src/sandbox/SandboxHeader/Header.tsx</li>
+<li>LessonScene: ../mono/libs/le-shared/redux-scenes/src/lesson/index.tsx</li>
+<li>AIChatAssistantChatLog: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/AIChatAssistant/AIChatAssistantContent/AIChatAssistantChatLog.tsx</li>
+<li>AIChat: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/AIChat/index.tsx</li>
+<li>ChatContent: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/AIChat/ChatContent/index.tsx</li>
+<li>AIChatHeader: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/AIChat/AIChatHeader/index.tsx</li>
+<li>LayoverPEChat: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoverPEChat/index.tsx</li>
+<li>ToolsMenu: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/ToolsTab/ToolsMenu/index.tsx</li>
+<li>ToolsMenuContainer: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/ToolsTab/ToolsMenu/ToolsMenuContainer.tsx</li>
+<li>AutocompleteCoachmark: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/ToolsTab/ToolsMenu/AutocompleteCoachmark.tsx</li>
+<li>DesktopHeader: ../mono/libs/le-shared/redux-components/src/LEHeader/DesktopHeader/index.tsx</li>
+<li>MobileNavMenu: ../mono/libs/le-shared/redux-components/src/LEHeader/MobileHeader/MobileNavMenu/index.tsx</li>
+<li>useMobileNavConfig: ../mono/libs/le-shared/redux-components/src/LEHeader/MobileHeader/MobileNavMenu/useMobileNavConfig.tsx</li>
+<li>EnterpriseHeader: ../mono/libs/le-shared/redux-components/src/LEHeader/EnterpriseHeader/index.tsx</li>
+<li>PlatformServerAlerts: ../mono/libs/le-shared/redux-components/src/PlatformServerAlerts.tsx</li>
+<li>LEExerciseNavigation: ../mono/libs/le-shared/redux-components/src/LENavigation/LEExerciseNavigation.tsx</li>
+<li>LENavigation: ../mono/libs/le-shared/redux-components/src/LENavigation/LENavigation.tsx</li>
+<li>AIHint: ../mono/libs/le-shared/redux-components/src/narrative/AIHint/index.tsx</li>
+<li>GetHelp: ../mono/libs/le-shared/redux-components/src/GetHelp/index.tsx</li>
+<li>HelpData: ../mono/libs/le-shared/redux-components/src/GetHelp/HelpData/index.tsx</li>
+<li>ReminderFlow: ../mono/libs/le-shared/redux-components/src/MobileWarningWall/ReminderFlow.tsx</li>
+<li>MobileUserMenu: ../mono/libs/le-shared/redux-components/src/MobileUserMenu/index.tsx</li>
+<li>useGetNextModuleInfo: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/SyllabusBrowserVariant/sharedComponents/ModuleDetail/useGetNextModuleInfo.tsx</li>
+<li>useLoadSyllabus: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/useLoadSyllabus.tsx</li>
+<li>LEProjectFooter: ../mono/libs/le-shared/redux-components/src/LEProjectFooter/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectGraphQLGatewayBaseUrl</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/StudyGroupInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>StudyGroupInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/StudyGroupInterstitial/index.tsx</li>
+<li>DocsPopover: ../mono/libs/le-shared/components/src/DocsPopover/index.tsx</li>
+<li>useLinkNarrativeWithDocs: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/ExerciseNarrative/useLinkNarrativeWithDocs.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentPath</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/StudyGroupInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>StudyGroupInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/StudyGroupInterstitial/index.tsx</li>
+<li>ContainerCompletionInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/ContainerCompletionInterstitial/index.tsx</li>
+<li>DefaultContent: ../mono/libs/le-shared/interstitials/src/Interstitials/ContainerCompletionInterstitial/DefaultContent/index.tsx</li>
+<li>TypeformSurveyInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/CSATSurveyInterstitials/Components/TypeformSurveyInterstitial.tsx</li>
+<li>useInterstitialTracking: ../mono/libs/le-shared/interstitials/src/Modals/PaidExclusiveOverlay/tracking/PaidExclusiveOverlayTracking.tsx</li>
+<li>ContainerCompletionInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/ContainerCompletionInterstitial/index.tsx</li>
+<li>DefaultContent: ../mono/libs/le-shared/interstitials/src/Modals/ContainerCompletionInterstitial/DefaultContent/index.tsx</li>
+<li>CumulativeAssessmentIntro: ../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/CumulativeAssessmentIntro.tsx</li>
+<li>CumulativeAssessmentSummary: ../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/CumulativeAssessmentSummary/index.tsx</li>
+<li>CumulativeAssessmentFinalResults: ../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/CumulativeAssessmentSummary/FinalResults.tsx</li>
+<li>CumulativeAssessmentDeck: ../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/CumulativeAssessmentDeck.tsx</li>
+<li>ProjectBrief: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/ProjectBrief/index.tsx</li>
+<li>useReminderEmailData: ../mono/libs/le-shared/redux-components/src/MobileWarningWall/useReminderEmailData.ts</li>
+<li>useLoadSyllabus: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/useLoadSyllabus.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentJourney</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/StudyGroupInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>StudyGroupInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/StudyGroupInterstitial/index.tsx</li>
+<li>TypeformSurveyInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/CSATSurveyInterstitials/Components/TypeformSurveyInterstitial.tsx</li>
+<li>CumulativeAssessmentIntro: ../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/CumulativeAssessmentIntro.tsx</li>
+<li>CumulativeAssessmentSummary: ../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/CumulativeAssessmentSummary/index.tsx</li>
+<li>CumulativeAssessmentFinalResults: ../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/CumulativeAssessmentSummary/FinalResults.tsx</li>
+<li>CumulativeAssessmentDeck: ../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/CumulativeAssessmentDeck.tsx</li>
+<li>useLoadSyllabus: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/useLoadSyllabus.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectTrackingPageNameAndContentIds</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/StudyGroupInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>StudyGroupInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/StudyGroupInterstitial/index.tsx</li>
+<li>OpenAIPromptDisclaimer: ../mono/libs/le-shared/interstitials/src/Modals/OpenAIPromptDisclaimer/index.tsx</li>
+<li>connect: ../mono/libs/le-shared/interstitials/src/Modals/ProgressInterstitial/index.tsx</li>
+<li>MobileWarningWall: ../mono/libs/le-shared/interstitials/src/Modals/MobileWarningWall/index.tsx</li>
+<li>VideoContent: ../mono/libs/le-shared/redux-scenes/src/video/VideoContent.tsx</li>
+<li>ExerciseScene: ../mono/libs/le-shared/redux-scenes/src/lesson/exercise/index.tsx</li>
+<li>EmbeddedVideoOverride: ../mono/libs/le-shared/redux-scenes/src/article/EmbeddedVideoOverride.tsx</li>
+<li>Article: ../mono/libs/le-shared/redux-scenes/src/article/article.tsx</li>
+<li>OutputTerminal: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/OutputTerminal/OutputTerminal.tsx</li>
+<li>TestCodeButton: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/CodeChallengeV2TestOutput/TestCodeButton.tsx</li>
+<li>Video: ../mono/libs/le-shared/redux-components/src/Video/index.tsx</li>
+<li>useProjectTracking: ../mono/libs/le-shared/redux-components/src/narrative/ProjectNarrative/tracking.tsx</li>
+<li>CheckWorkFooter: ../mono/libs/le-shared/redux-components/src/Terminal/CheckWorkFooter.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectWeeklyStreaks</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/WeeklyTargetInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>WeeklyTargetInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/WeeklyTargetInterstitial/index.tsx</li>
+<li>WeeklyTargetInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/WeeklyTargetInterstitial/index.tsx</li>
+<li>WeeklyTarget: ../mono/libs/le-shared/components/src/WeeklyTarget/WeeklyTarget.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectShowTrialCTA</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/GreatestHitsInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>GreatestHitsInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/GreatestHitsInterstitial/index.tsx</li>
+<li>NextProContentInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/NextProContentInterstitial/index.tsx</li>
+<li>ValuePropModal: ../mono/libs/le-shared/interstitials/src/Modals/ValuePropModal/index.tsx</li>
+<li>NextProContentModal: ../mono/libs/le-shared/interstitials/src/Modals/NextProContentModal/index.tsx</li>
+<li>UpsellButtonTemplate: ../mono/libs/le-shared/interstitials/src/templates/SharedTemplates/UpsellButtonTemplate.tsx</li>
+<li>useAppHeaderProps: ../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</li>
+<li>AdButton: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/AdTab/AdButton.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentContentItem</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/SkillsProgressInterstitial/SkillsProgressInterstitialContent.tsx</span></summary>
+          <ul>
+            <li>SkillsProgressInterstitialContent: ../mono/libs/le-shared/interstitials/src/Interstitials/SkillsProgressInterstitial/SkillsProgressInterstitialContent.tsx</li>
+<li>UpsellInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/UpsellInterstitial/index.tsx</li>
+<li>NextProContentInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/NextProContentInterstitial/index.tsx</li>
+<li>PaidExclusiveOverlay: ../mono/libs/le-shared/interstitials/src/Modals/PaidExclusiveOverlay/index.tsx</li>
+<li>ProExclusiveContentInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/ProExclusiveContentInterstitial/index.tsx</li>
+<li>ProExclusiveContents: ../mono/libs/le-shared/interstitials/src/Modals/ProExclusiveContent/ProExclusiveContents.tsx</li>
+<li>ProExclusiveFullscreen: ../mono/libs/le-shared/interstitials/src/Modals/ProExclusiveContent/ProExclusiveFullscreen.tsx</li>
+<li>NextProContentModal: ../mono/libs/le-shared/interstitials/src/Modals/NextProContentModal/index.tsx</li>
+<li>NextProContentInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/NextProContentInterstitial/index.tsx</li>
+<li>CodeBlock: ../mono/libs/le-shared/components/src/CodeBlock/Base.tsx</li>
+<li>DocsPopover: ../mono/libs/le-shared/components/src/DocsPopover/index.tsx</li>
+<li>ProjectPrompt: ../mono/libs/le-shared/redux-scenes/src/kanbanProject/kanbanProjectInterstitials/interstitials/ProjectPrompt/index.tsx</li>
+<li>QuizScene: ../mono/libs/le-shared/redux-scenes/src/quiz/index.tsx</li>
+<li>connect: ../mono/libs/le-shared/redux-components/src/SessionProvider/index.tsx</li>
+<li>ExecutableCode: ../mono/libs/le-shared/redux-components/src/Assessments/ExecutableCode/index.tsx</li>
+<li>MobileHeader: ../mono/libs/le-shared/redux-components/src/LEHeader/MobileHeader/index.tsx</li>
+<li>LEHeaderProvider: ../mono/libs/le-shared/redux-components/src/LEHeader/LEHeaderProvider.tsx</li>
+<li>MobilePaginatedCheckpoints: ../mono/libs/le-shared/redux-components/src/MobileCheckpointAccordion/MobilePaginatedCheckpoints/index.tsx</li>
+<li>MobileProjectTasks: ../mono/libs/le-shared/redux-components/src/MobileCheckpointAccordion/MobilePaginatedCheckpoints/MobileProjectTasks/index.tsx</li>
+<li>ForumSection: ../mono/libs/le-shared/redux-components/src/narrative/ForumSection/index.tsx</li>
+<li>CheckWorkFooter: ../mono/libs/le-shared/redux-components/src/Terminal/CheckWorkFooter.tsx</li>
+<li>ForkButton: ../mono/libs/le-shared/redux-components/src/ForkButton/index.tsx</li>
+<li>FreeResponseQuestionContextProvider: ../mono/libs/le-shared/redux-components/src/FreeResponseQuestion/libs/FreeResponseQuestionContext.tsx</li>
+<li>HelpData: ../mono/libs/le-shared/redux-components/src/GetHelp/HelpData/index.tsx</li>
+<li>useLoadSyllabus: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/useLoadSyllabus.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentContentItemIsProject</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/SkillsProgressInterstitial/SkillsProgressInterstitialContent.tsx</span></summary>
+          <ul>
+            <li>SkillsProgressInterstitialContent: ../mono/libs/le-shared/interstitials/src/Interstitials/SkillsProgressInterstitial/SkillsProgressInterstitialContent.tsx</li>
+<li>PersistentCodeEditorWrapper: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/PersistentCodeEditor/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentTrack</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/LearnerStoriesInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>LearnerStoriesInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/LearnerStoriesInterstitial/index.tsx</li>
+<li>UpsellInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/UpsellInterstitial/index.tsx</li>
+<li>ContainerCompletionInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/ContainerCompletionInterstitial/index.tsx</li>
+<li>DefaultContent: ../mono/libs/le-shared/interstitials/src/Interstitials/ContainerCompletionInterstitial/DefaultContent/index.tsx</li>
+<li>TypeformSurveyInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/CSATSurveyInterstitials/Components/TypeformSurveyInterstitial.tsx</li>
+<li>ModuleGateInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/ModuleGateInterstitial/index.tsx</li>
+<li>LockedContentLink: ../mono/libs/le-shared/interstitials/src/Interstitials/NextProContentInterstitial/LockedContentLink.tsx</li>
+<li>DynamicCareerPathsInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/DynamicCareerPathsInterstitial/index.tsx</li>
+<li>ProExclusiveCourseInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/ProExclusiveCourseInterstitial/index.tsx</li>
+<li>ProExclusiveContents: ../mono/libs/le-shared/interstitials/src/Modals/ProExclusiveContent/ProExclusiveContents.tsx</li>
+<li>ContainerCompletionInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/ContainerCompletionInterstitial/index.tsx</li>
+<li>DefaultContent: ../mono/libs/le-shared/interstitials/src/Modals/ContainerCompletionInterstitial/DefaultContent/index.tsx</li>
+<li>LockedContentLink: ../mono/libs/le-shared/interstitials/src/Modals/NextProContentInterstitial/LockedContentLink.tsx</li>
+<li>PaywallInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/PaywallInterstitial/index.tsx</li>
+<li>DocsPopover: ../mono/libs/le-shared/components/src/DocsPopover/index.tsx</li>
+<li>CumulativeAssessmentIntro: ../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/CumulativeAssessmentIntro.tsx</li>
+<li>CumulativeAssessmentSummary: ../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/CumulativeAssessmentSummary/index.tsx</li>
+<li>CumulativeAssessmentDeck: ../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/CumulativeAssessmentDeck.tsx</li>
+<li>useGetPracticePack: ../mono/libs/le-shared/redux-scenes/src/quiz/hooks/useGetPracticePack.ts</li>
+<li>Actions: ../mono/libs/le-shared/redux-scenes/src/quiz/Summary/Summary/Actions.tsx</li>
+<li>OutputTerminal: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/OutputTerminal/OutputTerminal.tsx</li>
+<li>ProjectBrief: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/ProjectBrief/index.tsx</li>
+<li>useLinkNarrativeWithDocs: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/ExerciseNarrative/useLinkNarrativeWithDocs.ts</li>
+<li>: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/BackTab.tsx</li>
+<li>PlatformServerAlerts: ../mono/libs/le-shared/redux-components/src/PlatformServerAlerts.tsx</li>
+<li>LEPreview: ../mono/libs/le-shared/redux-components/src/LEPreview/index.tsx</li>
+<li>ProjectReviewModal: ../mono/libs/le-shared/redux-components/src/narrative/ProjectReviewMain/ProjectReviewModal.tsx</li>
+<li>Brief: ../mono/libs/le-shared/redux-components/src/narrative/Brief/index.tsx</li>
+<li>ProjectReviewSection: ../mono/libs/le-shared/redux-components/src/narrative/Brief/ProjectReviewSection.tsx</li>
+<li>MoreHelpSection: ../mono/libs/le-shared/redux-components/src/narrative/ProjectNarrative/MoreHelpSection/index.tsx</li>
+<li>useReminderEmailData: ../mono/libs/le-shared/redux-components/src/MobileWarningWall/useReminderEmailData.ts</li>
+<li>useLoadSyllabus: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/useLoadSyllabus.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectLocationQuery</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/LeaderboardXPInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>LeaderboardXPInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/LeaderboardXPInterstitial/index.tsx</li>
+<li>ContentInterstitialManager: ../mono/libs/le-shared/interstitials/src/ContentInterstitialManager.tsx</li>
+<li>ReminderFlow: ../mono/libs/le-shared/redux-components/src/MobileWarningWall/ReminderFlow.tsx</li>
+<li>ExerciseButton: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/SyllabusBrowserVariant/Exercises/ExerciseButton.tsx</li>
+<li>Exercise: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/Exercise.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectUserIsInOpenFirstModuleExperiment</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/UpsellInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>UpsellInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/UpsellInterstitial/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsProExclusiveCourse</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/UpsellInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>UpsellInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/UpsellInterstitial/index.tsx</li>
+<li>useHasContentItemAccess: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/SyllabusBrowserVariant/sharedComponents/ModuleDetail/ContentItems/useHasContentItemAccess.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectLocationParams</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/UpsellInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>UpsellInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/UpsellInterstitial/index.tsx</li>
+<li>ModuleGateInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/ModuleGateInterstitial/index.tsx</li>
+<li>ContentInterstitialManager: ../mono/libs/le-shared/interstitials/src/ContentInterstitialManager.tsx</li>
+<li>SecondaryButton: ../mono/libs/le-shared/interstitials/src/Modals/ProgressInterstitial/SecondaryButton/index.tsx</li>
+<li>DefaultContent: ../mono/libs/le-shared/interstitials/src/Modals/ContainerCompletionInterstitial/DefaultContent/index.tsx</li>
+<li>useTopCTADetails: ../mono/libs/le-shared/interstitials/src/Modals/ContainerCompletionInterstitial/DefaultContent/useTopCTADetails.tsx</li>
+<li>UpsellModuleModal: ../mono/libs/le-shared/interstitials/src/Modals/UpsellModuleModal/index.tsx</li>
+<li>PaywallInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/PaywallInterstitial/index.tsx</li>
+<li>MonacoEditor: ../mono/libs/le-shared/components/src/MonacoEditor/index.tsx</li>
+<li>useEditorSettings: ../mono/libs/le-shared/components/src/MonacoEditor/useEditorSettings/index.ts</li>
+<li>ProjectScene: ../mono/libs/le-shared/redux-scenes/src/project/project/index.tsx</li>
+<li>AutocompleteCoachmark: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/ToolsTab/ToolsMenu/AutocompleteCoachmark.tsx</li>
+<li>LoggedInView: ../mono/libs/le-shared/redux-components/src/MobileWarningWall/Views/LoggedIn.tsx</li>
+<li>Track: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/PathBrowser/Track.tsx</li>
+<li>Module: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/Module.tsx</li>
+<li>Track: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/JourneyBrowser/Track.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentRootContainerType</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/ContainerCompletionInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>ContainerCompletionInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/ContainerCompletionInterstitial/index.tsx</li>
+<li>DefaultContent: ../mono/libs/le-shared/interstitials/src/Interstitials/ContainerCompletionInterstitial/DefaultContent/index.tsx</li>
+<li>ContainerCompletionInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/ContainerCompletionInterstitial/index.tsx</li>
+<li>DefaultContent: ../mono/libs/le-shared/interstitials/src/Modals/ContainerCompletionInterstitial/DefaultContent/index.tsx</li>
+<li>MonacoEditor: ../mono/libs/le-shared/components/src/MonacoEditor/index.tsx</li>
+<li>useEditorSettings: ../mono/libs/le-shared/components/src/MonacoEditor/useEditorSettings/index.ts</li>
+<li>CodeBlock: ../mono/libs/le-shared/components/src/CodeBlock/Base.tsx</li>
+<li>AutocompleteCoachmark: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/ToolsTab/ToolsMenu/AutocompleteCoachmark.tsx</li>
+<li>ForumSection: ../mono/libs/le-shared/redux-components/src/narrative/ForumSection/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectJourneyBySlug</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/ContainerCompletionInterstitial/DefaultContent/index.tsx</span></summary>
+          <ul>
+            <li>DefaultContent: ../mono/libs/le-shared/interstitials/src/Interstitials/ContainerCompletionInterstitial/DefaultContent/index.tsx</li>
+<li>PaywallInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/PaywallInterstitial/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectJourneyProgress</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/ContainerCompletionInterstitial/DefaultContent/index.tsx</span></summary>
+          <ul>
+            <li>DefaultContent: ../mono/libs/le-shared/interstitials/src/Interstitials/ContainerCompletionInterstitial/DefaultContent/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectPathProgress</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/ContainerCompletionInterstitial/DefaultContent/index.tsx</span></summary>
+          <ul>
+            <li>DefaultContent: ../mono/libs/le-shared/interstitials/src/Interstitials/ContainerCompletionInterstitial/DefaultContent/index.tsx</li>
+<li>DefaultContent: ../mono/libs/le-shared/interstitials/src/Modals/ContainerCompletionInterstitial/DefaultContent/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectTrackHasCertificate</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/ContainerCompletionInterstitial/DefaultContent/index.tsx</span></summary>
+          <ul>
+            <li>DefaultContent: ../mono/libs/le-shared/interstitials/src/Interstitials/ContainerCompletionInterstitial/DefaultContent/index.tsx</li>
+<li>DefaultContent: ../mono/libs/le-shared/interstitials/src/Modals/ContainerCompletionInterstitial/DefaultContent/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectReleasedContent</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/ContainerCompletionInterstitial/DefaultContent/index.tsx</span></summary>
+          <ul>
+            <li>DefaultContent: ../mono/libs/le-shared/interstitials/src/Interstitials/ContainerCompletionInterstitial/DefaultContent/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsPro</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/ContainerCompletionInterstitial/DefaultContent/index.tsx</span></summary>
+          <ul>
+            <li>DefaultContent: ../mono/libs/le-shared/interstitials/src/Interstitials/ContainerCompletionInterstitial/DefaultContent/index.tsx</li>
+<li>ContentInterstitialManager: ../mono/libs/le-shared/interstitials/src/ContentInterstitialManager.tsx</li>
+<li>DefaultContent: ../mono/libs/le-shared/interstitials/src/Modals/ContainerCompletionInterstitial/DefaultContent/index.tsx</li>
+<li>UpsellButtonTemplate: ../mono/libs/le-shared/interstitials/src/templates/SharedTemplates/UpsellButtonTemplate.tsx</li>
+<li>useAppHeaderProps: ../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</li>
+<li>Icon: ../mono/libs/le-shared/components/src/ContentItemIcon/Icon.tsx</li>
+<li>: ../mono/libs/le-shared/redux-scenes/src/quiz/hooks/useShowLimitedBanner.ts</li>
+<li>: ../mono/libs/le-shared/redux-scenes/src/project/hooks/useShowLimitedBanner.ts</li>
+<li>AIChatWidget: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/AIChatWidget/index.tsx</li>
+<li>AIChatAssistantEmptyState: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/AIChatAssistant/AIChatAssistantContent/AIChatAssistantEmptyState.tsx</li>
+<li>AIChatAssistantRateLimitBanner: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/AIChatAssistant/AIChatAssistantRateLimitBanner.tsx</li>
+<li>AdButton: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/AdTab/AdButton.tsx</li>
+<li>ContentItemTitle: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/ContentItem/ContentItemTitle.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentEmodule</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/CSATSurveyInterstitials/Components/TypeformSurveyInterstitial.tsx</span></summary>
+          <ul>
+            <li>TypeformSurveyInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/CSATSurveyInterstitials/Components/TypeformSurveyInterstitial.tsx</li>
+<li>useGetPracticePack: ../mono/libs/le-shared/redux-scenes/src/quiz/hooks/useGetPracticePack.ts</li>
+<li>QuizSummary: ../mono/libs/le-shared/redux-scenes/src/quiz/Summary/index.tsx</li>
+<li>Actions: ../mono/libs/le-shared/redux-scenes/src/quiz/Summary/Summary/Actions.tsx</li>
+<li>useLoadSyllabus: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/useLoadSyllabus.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentUserId</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/CSATSurveyInterstitials/Components/TypeformSurveyInterstitial.tsx</span></summary>
+          <ul>
+            <li>TypeformSurveyInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/CSATSurveyInterstitials/Components/TypeformSurveyInterstitial.tsx</li>
+<li>CumulativeAssessmentDeck: ../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/CumulativeAssessmentDeck.tsx</li>
+<li>AssessmentDeckSkillsWrapper: ../mono/libs/le-shared/redux-scenes/src/practicePack/AssessmentDeckSkillsWrapper.tsx</li>
+<li>useContentItemWithSkills: ../mono/libs/le-shared/redux-scenes/src/helpers/useContentItemWithSkills.ts</li>
+<li>FeedbackAnchor: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/FeedbackTab.tsx</li>
+<li>Exercises: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/SyllabusBrowserVariant/Exercises/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentTrackLanguage</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/SkillPathGeneralInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>SkillPathsGeneralInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/SkillPathGeneralInterstitial/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectUnlockButtonText</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/ModuleGateInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>ModuleGateInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/ModuleGateInterstitial/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectUnlockButtonHref</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/ModuleGateInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>ModuleGateInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/ModuleGateInterstitial/index.tsx</li>
+<li>NextProContentInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/NextProContentInterstitial/index.tsx</li>
+<li>NextProContentInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/NextProContentInterstitial/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectNextProAndFreeContentItems</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/NextProContentInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>NextProContentInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/NextProContentInterstitial/index.tsx</li>
+<li>NextProContentInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/NextProContentInterstitial/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsFree</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/NextProContentInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>NextProContentInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/NextProContentInterstitial/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectUserIsInRateLimitQuizzesExperiment</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/NextProContentInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>NextProContentInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/NextProContentInterstitial/index.tsx</li>
+<li>Icon: ../mono/libs/le-shared/components/src/ContentItemIcon/Icon.tsx</li>
+<li>: ../mono/libs/le-shared/redux-scenes/src/quiz/hooks/useShowLimitedBanner.ts</li>
+<li>useHasContentItemAccess: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/SyllabusBrowserVariant/sharedComponents/ModuleDetail/ContentItems/useHasContentItemAccess.tsx</li>
+<li>useGetNextModuleInfo: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/SyllabusBrowserVariant/sharedComponents/ModuleDetail/useGetNextModuleInfo.tsx</li>
+<li>ContentItemTitle: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/ContentItem/ContentItemTitle.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectUserIsInRateLimitProjectsExperiment</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/NextProContentInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>NextProContentInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/NextProContentInterstitial/index.tsx</li>
+<li>Icon: ../mono/libs/le-shared/components/src/ContentItemIcon/Icon.tsx</li>
+<li>: ../mono/libs/le-shared/redux-scenes/src/project/hooks/useShowLimitedBanner.ts</li>
+<li>useHasContentItemAccess: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/SyllabusBrowserVariant/sharedComponents/ModuleDetail/ContentItems/useHasContentItemAccess.tsx</li>
+<li>useGetNextModuleInfo: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/SyllabusBrowserVariant/sharedComponents/ModuleDetail/useGetNextModuleInfo.tsx</li>
+<li>ContentItemTitle: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/ContentItem/ContentItemTitle.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectUserEntitlements</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/NextProContentInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>NextProContentInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/NextProContentInterstitial/index.tsx</li>
+<li>useHasContentItemAccess: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/SyllabusBrowserVariant/sharedComponents/ModuleDetail/ContentItems/useHasContentItemAccess.tsx</li>
+<li>useGetNextModuleInfo: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/SyllabusBrowserVariant/sharedComponents/ModuleDetail/useGetNextModuleInfo.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentUserPurpose</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/GoalSettingInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>GoalSettingInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/GoalSettingInterstitial/index.tsx</li>
+<li>useGoalSettingTracking: ../mono/libs/le-shared/interstitials/src/Interstitials/GoalSettingInterstitial/tracking.tsx</li>
+<li>ContentInterstitialManager: ../mono/libs/le-shared/interstitials/src/ContentInterstitialManager.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectPurposeChoices</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/GoalSettingInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>GoalSettingInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/GoalSettingInterstitial/index.tsx</li>
+<li>GoalSettingInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/GoalSettingInterstitial/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectOnboardingFetchError</strong><span>../mono/libs/le-shared/interstitials/src/Interstitials/GoalSettingInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>GoalSettingInterstitial: ../mono/libs/le-shared/interstitials/src/Interstitials/GoalSettingInterstitial/index.tsx</li>
+<li>GoalSettingInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/GoalSettingInterstitial/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectContentInterstitialsToShow</strong><span>../mono/libs/le-shared/interstitials/src/ContentInterstitialManager.tsx</span></summary>
+          <ul>
+            <li>ContentInterstitialManager: ../mono/libs/le-shared/interstitials/src/ContentInterstitialManager.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectLocation</strong><span>../mono/libs/le-shared/interstitials/src/ContentInterstitialManager.tsx</span></summary>
+          <ul>
+            <li>ContentInterstitialManager: ../mono/libs/le-shared/interstitials/src/ContentInterstitialManager.tsx</li>
+<li>PaidExclusiveOverlay: ../mono/libs/le-shared/interstitials/src/Modals/PaidExclusiveOverlay/index.tsx</li>
+<li>ProExclusiveContentInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/ProExclusiveContentInterstitial/index.tsx</li>
+<li>InterstitialContent: ../mono/libs/le-shared/interstitials/src/Modals/ProExclusiveCourseInterstitial/InterstitialContent/index.tsx</li>
+<li>OnetimePastDueDunningModal: ../mono/libs/le-shared/interstitials/src/Modals/PastDueModal/OneTimePastDueModal.tsx</li>
+<li>ProExclusiveContents: ../mono/libs/le-shared/interstitials/src/Modals/ProExclusiveContent/ProExclusiveContents.tsx</li>
+<li>InterstitialContent: ../mono/libs/le-shared/interstitials/src/Modals/PaywallInterstitial/InterstitialContent/index.tsx</li>
+<li>LoginSection: ../mono/libs/le-shared/components/src/LoginOrRegistration/LoginSection/index.tsx</li>
+<li>useAppHeaderProps: ../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</li>
+<li>useFooterSketches: ../mono/libs/le-shared/components/src/FooterSketches/index.tsx</li>
+<li>UpsellPlanCards: ../mono/libs/le-shared/components/src/UpsellPlanCards/index.tsx</li>
+<li>SmartPractice: ../mono/libs/le-shared/redux-scenes/src/practicePack/SmartPractice/index.tsx</li>
+<li>: ../mono/libs/le-shared/redux-scenes/src/quiz/RateLimitSummaryBanner.tsx</li>
+<li>: ../mono/libs/le-shared/redux-scenes/src/project/RateLimitSummaryBanner.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectNextContentItemPath</strong><span>../mono/libs/le-shared/interstitials/src/ContentInterstitialManager.tsx</span></summary>
+          <ul>
+            <li>ContentInterstitialManager: ../mono/libs/le-shared/interstitials/src/ContentInterstitialManager.tsx</li>
+<li>MobileAppQRInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/MobileAppQRInterstitial/index.tsx</li>
+<li>WeeklyTargetInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/WeeklyTargetInterstitial/index.tsx</li>
+<li>GreatestHitsInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/GreatestHitsInterstitial/index.tsx</li>
+<li>UpsellModuleModal: ../mono/libs/le-shared/interstitials/src/Modals/UpsellModuleModal/index.tsx</li>
+<li>GoalSettingInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/GoalSettingInterstitial/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectNextFreeContentItemPath</strong><span>../mono/libs/le-shared/interstitials/src/ContentInterstitialManager.tsx</span></summary>
+          <ul>
+            <li>ContentInterstitialManager: ../mono/libs/le-shared/interstitials/src/ContentInterstitialManager.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsInOptimizingProInterstitialsVariant</strong><span>../mono/libs/le-shared/interstitials/src/ContentInterstitialManager.tsx</span></summary>
+          <ul>
+            <li>ContentInterstitialManager: ../mono/libs/le-shared/interstitials/src/ContentInterstitialManager.tsx</li>
+<li>ContainerlessContentItem: ../mono/libs/le-shared/redux-scenes/src/containerlessContentItem/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsFirstTrackInPathOrJourney</strong><span>../mono/libs/le-shared/interstitials/src/ContentInterstitialManager.tsx</span></summary>
+          <ul>
+            <li>ContentInterstitialManager: ../mono/libs/le-shared/interstitials/src/ContentInterstitialManager.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsProSilver</strong><span>../mono/libs/le-shared/interstitials/src/Modals/PaidExclusiveOverlay/index.tsx</span></summary>
+          <ul>
+            <li>PaidExclusiveOverlay: ../mono/libs/le-shared/interstitials/src/Modals/PaidExclusiveOverlay/index.tsx</li>
+<li>ProExclusiveContentInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/ProExclusiveContentInterstitial/index.tsx</li>
+<li>InterstitialContent: ../mono/libs/le-shared/interstitials/src/Modals/ProExclusiveCourseInterstitial/InterstitialContent/index.tsx</li>
+<li>PastDueModal: ../mono/libs/le-shared/interstitials/src/Modals/PastDueModal/index.tsx</li>
+<li>ProExclusiveContents: ../mono/libs/le-shared/interstitials/src/Modals/ProExclusiveContent/ProExclusiveContents.tsx</li>
+<li>InterstitialContent: ../mono/libs/le-shared/interstitials/src/Modals/PaywallInterstitial/InterstitialContent/index.tsx</li>
+<li>useAppHeaderProps: ../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</li>
+<li>ProjectScene: ../mono/libs/le-shared/redux-scenes/src/project/project/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsFirstLockedContentItemOnPath</strong><span>../mono/libs/le-shared/interstitials/src/Modals/PaidExclusiveOverlay/tracking/PaidExclusiveOverlayTracking.tsx</span></summary>
+          <ul>
+            <li>useInterstitialTracking: ../mono/libs/le-shared/interstitials/src/Modals/PaidExclusiveOverlay/tracking/PaidExclusiveOverlayTracking.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentModal</strong><span>../mono/libs/le-shared/interstitials/src/Modals/OpenAIPromptDisclaimer/index.tsx</span></summary>
+          <ul>
+            <li>OpenAIPromptDisclaimer: ../mono/libs/le-shared/interstitials/src/Modals/OpenAIPromptDisclaimer/index.tsx</li>
+<li>: ../mono/libs/le-shared/interstitials/src/Modals/LoginOrRegisterOverlay/index.tsx</li>
+<li>PastDueModal: ../mono/libs/le-shared/interstitials/src/Modals/PastDueModal/index.tsx</li>
+<li>AIAssistantSettingsModal: ../mono/libs/le-shared/interstitials/src/Modals/AIAssistantSettingsModal/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectEnterpriseUserUrl</strong><span>../mono/libs/le-shared/interstitials/src/Modals/OpenAIPromptDisclaimer/index.tsx</span></summary>
+          <ul>
+            <li>OpenAIPromptDisclaimer: ../mono/libs/le-shared/interstitials/src/Modals/OpenAIPromptDisclaimer/index.tsx</li>
+<li>useAppHeaderProps: ../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</li>
+<li>KanbanProjectPage: ../mono/libs/le-shared/redux-scenes/src/kanbanProject/index.tsx</li>
+<li>HomeLogo: ../mono/libs/le-shared/redux-components/src/LEHeader/EnterpriseHeader/tabs/HomeLogo.tsx</li>
+<li>HomeTab: ../mono/libs/le-shared/redux-components/src/LEHeader/EnterpriseHeader/tabs/HomeTab.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsEnterpriseApplication</strong><span>../mono/libs/le-shared/interstitials/src/Modals/OpenAIPromptDisclaimer/index.tsx</span></summary>
+          <ul>
+            <li>OpenAIPromptDisclaimer: ../mono/libs/le-shared/interstitials/src/Modals/OpenAIPromptDisclaimer/index.tsx</li>
+<li>Markdown: ../mono/libs/le-shared/components/src/Markdown/index.tsx</li>
+<li>KanbanProjectPage: ../mono/libs/le-shared/redux-scenes/src/kanbanProject/index.tsx</li>
+<li>ProjectScene: ../mono/libs/le-shared/redux-scenes/src/project/project/index.tsx</li>
+<li>AIChatWidget: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/AIChatWidget/index.tsx</li>
+<li>ToolsMenu: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/ToolsTab/ToolsMenu/index.tsx</li>
+<li>ToolsMenuContainer: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/ToolsTab/ToolsMenu/ToolsMenuContainer.tsx</li>
+<li>EnterpriseHeader: ../mono/libs/le-shared/redux-components/src/LEHeader/EnterpriseHeader/index.tsx</li>
+<li>GetHelp: ../mono/libs/le-shared/redux-components/src/GetHelp/index.tsx</li>
+<li>HelpData: ../mono/libs/le-shared/redux-components/src/GetHelp/HelpData/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentContainerSyllabusRoute</strong><span>../mono/libs/le-shared/interstitials/src/Modals/ProgressInterstitial/SecondaryButton/index.tsx</span></summary>
+          <ul>
+            <li>SecondaryButton: ../mono/libs/le-shared/interstitials/src/Modals/ProgressInterstitial/SecondaryButton/index.tsx</li>
+<li>ProExclusiveValuePropModal: ../mono/libs/le-shared/interstitials/src/Modals/ValuePropModal/ProExclusiveValuePropModal.tsx</li>
+<li>NavigationFooter: ../mono/libs/le-shared/redux-scenes/src/practicePack/SmartPractice/Interstitials/StartInterstitial/NavigationFooter.tsx</li>
+<li>SummaryInterstitial: ../mono/libs/le-shared/redux-scenes/src/practicePack/SmartPractice/Interstitials/SummaryInterstitial/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectNumberOfModals</strong><span>../mono/libs/le-shared/interstitials/src/Modals/MobileAppQRInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>MobileAppQRInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/MobileAppQRInterstitial/index.tsx</li>
+<li>WeeklyTargetInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/WeeklyTargetInterstitial/index.tsx</li>
+<li>GreatestHitsInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/GreatestHitsInterstitial/index.tsx</li>
+<li>GoalSettingInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/GoalSettingInterstitial/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsContainerlessPortfolioProject</strong><span>../mono/libs/le-shared/interstitials/src/Modals/ValuePropModal/index.tsx</span></summary>
+          <ul>
+            <li>ValuePropModal: ../mono/libs/le-shared/interstitials/src/Modals/ValuePropModal/index.tsx</li>
+<li>KanbanProjectPage: ../mono/libs/le-shared/redux-scenes/src/kanbanProject/index.tsx</li>
+<li>useContentType: ../mono/libs/le-shared/redux-components/src/MobileWarningWall/useContentType.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsContainerlessProject</strong><span>../mono/libs/le-shared/interstitials/src/Modals/ValuePropModal/index.tsx</span></summary>
+          <ul>
+            <li>ValuePropModal: ../mono/libs/le-shared/interstitials/src/Modals/ValuePropModal/index.tsx</li>
+<li>ProjectScene: ../mono/libs/le-shared/redux-scenes/src/project/project/index.tsx</li>
+<li>useContentType: ../mono/libs/le-shared/redux-components/src/MobileWarningWall/useContentType.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCheckoutPath</strong><span>../mono/libs/le-shared/interstitials/src/Modals/ValuePropModal/ValuePropModalContents.tsx</span></summary>
+          <ul>
+            <li>ValuePropModalContents: ../mono/libs/le-shared/interstitials/src/Modals/ValuePropModal/ValuePropModalContents.tsx</li>
+<li>NextProContentModal: ../mono/libs/le-shared/interstitials/src/Modals/NextProContentModal/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectLocationType</strong><span>../mono/libs/le-shared/interstitials/src/Modals/PastDueModal/index.tsx</span></summary>
+          <ul>
+            <li>PastDueModal: ../mono/libs/le-shared/interstitials/src/Modals/PastDueModal/index.tsx</li>
+<li>LoginForm: ../mono/libs/le-shared/components/src/Forms/LoginForm/index.tsx</li>
+<li>useAppHeaderNotifications: ../mono/libs/le-shared/components/src/AppHeader/useAppHeaderNotifications.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectLatestPaymentMethod</strong><span>../mono/libs/le-shared/interstitials/src/Modals/PastDueModal/index.tsx</span></summary>
+          <ul>
+            <li>PastDueModal: ../mono/libs/le-shared/interstitials/src/Modals/PastDueModal/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectUrlPathForContentItemInCurrentContainer</strong><span>../mono/libs/le-shared/interstitials/src/Modals/NextProContentModal/index.tsx</span></summary>
+          <ul>
+            <li>NextProContentModal: ../mono/libs/le-shared/interstitials/src/Modals/NextProContentModal/index.tsx</li>
+<li>NextProContentInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/NextProContentInterstitial/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectNextContentItems</strong><span>../mono/libs/le-shared/interstitials/src/Modals/NextProContentModal/index.tsx</span></summary>
+          <ul>
+            <li>NextProContentModal: ../mono/libs/le-shared/interstitials/src/Modals/NextProContentModal/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectLocationPathName</strong><span>../mono/libs/le-shared/interstitials/src/Modals/MobileWarningWall/index.tsx</span></summary>
+          <ul>
+            <li>MobileWarningWall: ../mono/libs/le-shared/interstitials/src/Modals/MobileWarningWall/index.tsx</li>
+<li>InterstitialContent: ../mono/libs/le-shared/interstitials/src/Modals/PaywallInterstitial/InterstitialContent/index.tsx</li>
+<li>LearningComponentContainer: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LearningEnvironmentMain/LayoutManager/GridManager/LearningComponentBuilder/LearningComponentContainer.tsx</li>
+<li>TabbedPane: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LearningEnvironmentMain/LayoutManager/GridManager/GridLayout/TabbedPane/index.tsx</li>
+<li>ReminderFlow: ../mono/libs/le-shared/redux-components/src/MobileWarningWall/ReminderFlow.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectMobileWarningWallContentItem</strong><span>../mono/libs/le-shared/interstitials/src/Modals/MobileWarningWall/index.tsx</span></summary>
+          <ul>
+            <li>MobileWarningWall: ../mono/libs/le-shared/interstitials/src/Modals/MobileWarningWall/index.tsx</li>
+<li>MobileWarningWall: ../mono/libs/le-shared/redux-components/src/MobileWarningWall/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCourseEnrollmentIds</strong><span>../mono/libs/le-shared/interstitials/src/Modals/MobileWarningWall/index.tsx</span></summary>
+          <ul>
+            <li>MobileWarningWall: ../mono/libs/le-shared/interstitials/src/Modals/MobileWarningWall/index.tsx</li>
+<li>MobileWarningWall: ../mono/libs/le-shared/redux-components/src/MobileWarningWall/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectPathEnrollmentIds</strong><span>../mono/libs/le-shared/interstitials/src/Modals/MobileWarningWall/index.tsx</span></summary>
+          <ul>
+            <li>MobileWarningWall: ../mono/libs/le-shared/interstitials/src/Modals/MobileWarningWall/index.tsx</li>
+<li>PathCard: ../mono/libs/le-shared/components/src/PathCard/index.tsx</li>
+<li>MobileWarningWall: ../mono/libs/le-shared/redux-components/src/MobileWarningWall/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectContentItemProgresses</strong><span>../mono/libs/le-shared/interstitials/src/Modals/MobileWarningWall/index.tsx</span></summary>
+          <ul>
+            <li>MobileWarningWall: ../mono/libs/le-shared/interstitials/src/Modals/MobileWarningWall/index.tsx</li>
+<li>MobileWarningWall: ../mono/libs/le-shared/redux-components/src/MobileWarningWall/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsAnonymous</strong><span>../mono/libs/le-shared/interstitials/src/Modals/MobileWarningWall/index.tsx</span></summary>
+          <ul>
+            <li>MobileWarningWall: ../mono/libs/le-shared/interstitials/src/Modals/MobileWarningWall/index.tsx</li>
+<li>useFetchStudyGroup: ../mono/libs/le-shared/redux-scenes/src/utils/useFetchStudyGroup.ts</li>
+<li>ContainerlessContentItem: ../mono/libs/le-shared/redux-scenes/src/containerlessContentItem/index.tsx</li>
+<li>Challenge: ../mono/libs/le-shared/redux-scenes/src/challenge/index.tsx</li>
+<li>connect: ../mono/libs/le-shared/redux-components/src/SessionProvider/index.tsx</li>
+<li>MobileHeader: ../mono/libs/le-shared/redux-components/src/LEHeader/MobileHeader/index.tsx</li>
+<li>MobileWarningWall: ../mono/libs/le-shared/redux-components/src/MobileWarningWall/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectPathBySlug</strong><span>../mono/libs/le-shared/interstitials/src/Modals/PaywallInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>PaywallInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/PaywallInterstitial/index.tsx</li>
+<li>ProjectScene: ../mono/libs/le-shared/redux-scenes/src/project/project/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectTrackBySlug</strong><span>../mono/libs/le-shared/interstitials/src/Modals/PaywallInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>PaywallInterstitial: ../mono/libs/le-shared/interstitials/src/Modals/PaywallInterstitial/index.tsx</li>
+<li>ProjectScene: ../mono/libs/le-shared/redux-scenes/src/project/project/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectShowMoneybackCTA</strong><span>../mono/libs/le-shared/interstitials/src/templates/SharedTemplates/UpsellButtonTemplate.tsx</span></summary>
+          <ul>
+            <li>UpsellButtonTemplate: ../mono/libs/le-shared/interstitials/src/templates/SharedTemplates/UpsellButtonTemplate.tsx</li>
+<li>AdButton: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/AdTab/AdButton.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsProPaused</strong><span>../mono/libs/le-shared/interstitials/src/templates/SharedTemplates/UpsellButtonTemplate.tsx</span></summary>
+          <ul>
+            <li>UpsellButtonTemplate: ../mono/libs/le-shared/interstitials/src/templates/SharedTemplates/UpsellButtonTemplate.tsx</li>
+<li>AdButton: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/AdTab/AdButton.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectPaidExclusiveOverlayExperiment</strong><span>../mono/libs/le-shared/interstitials/src/templates/SharedTemplates/UpsellButtonTemplate.tsx</span></summary>
+          <ul>
+            <li>UpsellButtonTemplate: ../mono/libs/le-shared/interstitials/src/templates/SharedTemplates/UpsellButtonTemplate.tsx</li>
+<li>ContainerlessContentItem: ../mono/libs/le-shared/redux-scenes/src/containerlessContentItem/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectUserInterfaceSettings</strong><span>../mono/libs/le-shared/components/src/MonacoEditor/index.tsx</span></summary>
+          <ul>
+            <li>MonacoEditor: ../mono/libs/le-shared/components/src/MonacoEditor/index.tsx</li>
+<li>useEditorTheming: ../mono/libs/le-shared/components/src/MonacoEditor/useEditorTheming/index.ts</li>
+<li>useEditorSettings: ../mono/libs/le-shared/components/src/MonacoEditor/useEditorSettings/index.ts</li>
+<li>KanbanProjectSidebar: ../mono/libs/le-shared/redux-scenes/src/kanbanProject/kanbanProjectContainer/kanbanProjectSidebar/index.tsx</li>
+<li>EnhancedHint: ../mono/libs/le-shared/redux-components/src/Hint/EnhancedHint.tsx</li>
+<li>LegacyHint: ../mono/libs/le-shared/redux-components/src/Hint/LegacyHint.tsx</li>
+<li>OutputErrorFeedback: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/OutputTerminal/OutputErrorFeedback/index.tsx</li>
+<li>ProjectBrief: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/ProjectBrief/index.tsx</li>
+<li>SandboxProjectBrief: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/ProjectBrief/SandboxProjectBrief.tsx</li>
+<li>ToolsMenu: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/ToolsTab/ToolsMenu/index.tsx</li>
+<li>ToolsMenuContainer: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/ToolsTab/ToolsMenu/ToolsMenuContainer.tsx</li>
+<li>MobileCheckpointAccordion: ../mono/libs/le-shared/redux-components/src/MobileCheckpointAccordion/index.tsx</li>
+<li>MobilePaginatedCheckpointFooter: ../mono/libs/le-shared/redux-components/src/MobileCheckpointAccordion/MobilePaginatedCheckpointFooter/index.tsx</li>
+<li>ProjectReviewMain: ../mono/libs/le-shared/redux-components/src/narrative/ProjectReviewMain/index.tsx</li>
+<li>Brief: ../mono/libs/le-shared/redux-components/src/narrative/Brief/index.tsx</li>
+<li>SimpleDiffEditor: ../mono/libs/le-shared/redux-components/src/SimpleDiffEditor/index.tsx</li>
+<li>NarrativeMarkdown: ../mono/libs/le-shared/redux-components/src/NarrativeMarkdown/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentEditorLanguage</strong><span>../mono/libs/le-shared/components/src/MonacoEditor/index.tsx</span></summary>
+          <ul>
+            <li>MonacoEditor: ../mono/libs/le-shared/components/src/MonacoEditor/index.tsx</li>
+<li>useEditorSettings: ../mono/libs/le-shared/components/src/MonacoEditor/useEditorSettings/index.ts</li>
+<li>AutocompleteCoachmark: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/ToolsTab/ToolsMenu/AutocompleteCoachmark.tsx</li>
+<li>LEExerciseNavigation: ../mono/libs/le-shared/redux-components/src/LENavigation/LEExerciseNavigation.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsPracticeLocation</strong><span>../mono/libs/le-shared/components/src/MonacoEditor/index.tsx</span></summary>
+          <ul>
+            <li>MonacoEditor: ../mono/libs/le-shared/components/src/MonacoEditor/index.tsx</li>
+<li>useEditorSettings: ../mono/libs/le-shared/components/src/MonacoEditor/useEditorSettings/index.ts</li>
+<li>AutocompleteCoachmark: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/ToolsTab/ToolsMenu/AutocompleteCoachmark.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectFeatureCategoryByIds</strong><span>../mono/libs/le-shared/components/src/PathCard/index.tsx</span></summary>
+          <ul>
+            <li>PathCard: ../mono/libs/le-shared/components/src/PathCard/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectUserCompletedContainers</strong><span>../mono/libs/le-shared/components/src/PathCard/index.tsx</span></summary>
+          <ul>
+            <li>PathCard: ../mono/libs/le-shared/components/src/PathCard/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectAlerts</strong><span>../mono/libs/le-shared/components/src/Forms/LoginForm/index.tsx</span></summary>
+          <ul>
+            <li>LoginForm: ../mono/libs/le-shared/components/src/Forms/LoginForm/index.tsx</li>
+<li>ServerAlerts: ../mono/libs/le-shared/components/src/ServerAlerts/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectTrackingPageName</strong><span>../mono/libs/le-shared/components/src/CodeBlock/Base.tsx</span></summary>
+          <ul>
+            <li>CodeBlock: ../mono/libs/le-shared/components/src/CodeBlock/Base.tsx</li>
+<li>CumulativeAssessmentDeck: ../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/CumulativeAssessmentDeck.tsx</li>
+<li>Quiz: ../mono/libs/le-shared/redux-scenes/src/quiz/Quiz.tsx</li>
+<li>ExternalResource: ../mono/libs/le-shared/redux-scenes/src/externalResource/ExternalResource/index.tsx</li>
+<li>LearningComponentBuilder: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LearningEnvironmentMain/LayoutManager/GridManager/LearningComponentBuilder/index.tsx</li>
+<li>SolutionDiffButtonWrapper: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/SolutionDiffButtonWrapper/index.tsx</li>
+<li>SolutionDiffEditorWrapper: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/SolutionDiffModal/SolutionDiffEditor/index.tsx</li>
+<li>SolutionIFramePreview: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/SolutionDiffModal/SolutionIFramePreview/index.tsx</li>
+<li>ToolsMenu: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/ToolsTab/ToolsMenu/index.tsx</li>
+<li>ToolsMenuContainer: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/ToolsTab/ToolsMenu/ToolsMenuContainer.tsx</li>
+<li>AutocompleteCoachmark: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/ToolsTab/ToolsMenu/AutocompleteCoachmark.tsx</li>
+<li>EnterpriseHeader: ../mono/libs/le-shared/redux-components/src/LEHeader/EnterpriseHeader/index.tsx</li>
+<li>ForkButton: ../mono/libs/le-shared/redux-components/src/ForkButton/index.tsx</li>
+<li>useFreeResponseQuestionResponseState: ../mono/libs/le-shared/redux-components/src/FreeResponseQuestion/libs/useFreeResponseQuestionResponseState.ts</li>
+<li>ThemedWebBrowser: ../mono/libs/le-shared/redux-components/src/WebBrowser/ThemedWebBrowser.tsx</li>
+<li>WebBrowserContainer: ../mono/libs/le-shared/redux-components/src/WebBrowser/WebBrowserContainer.tsx</li>
+<li>useSyllabusBrowserTracking: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/useSyllabusBrowserTracking.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentUserEnterprise</strong><span>../mono/libs/le-shared/components/src/Markdown/overrides/EnterpriseLink/useRestrictInternalLinksForUser.ts</span></summary>
+          <ul>
+            <li>useRestrictInternalLinksForUser: ../mono/libs/le-shared/components/src/Markdown/overrides/EnterpriseLink/useRestrictInternalLinksForUser.ts</li>
+<li>function: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/AIChatAssistant/AIChatFeedback/AIChatFeedback.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCategoryBasicData</strong><span>../mono/libs/le-shared/components/src/ExploreCategoryCard/index.tsx</span></summary>
+          <ul>
+            <li>ExploreCategoryCard: ../mono/libs/le-shared/components/src/ExploreCategoryCard/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsAccountManager</strong><span>../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</span></summary>
+          <ul>
+            <li>useAppHeaderProps: ../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsAdmin</strong><span>../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</span></summary>
+          <ul>
+            <li>useAppHeaderProps: ../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsCustomerService</strong><span>../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</span></summary>
+          <ul>
+            <li>useAppHeaderProps: ../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsBusinessAdmin</strong><span>../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</span></summary>
+          <ul>
+            <li>useAppHeaderProps: ../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsBusinessSsoUser</strong><span>../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</span></summary>
+          <ul>
+            <li>useAppHeaderProps: ../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsEnterpriseUser</strong><span>../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</span></summary>
+          <ul>
+            <li>useAppHeaderProps: ../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</li>
+<li>AIChatWidget: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/AIChatWidget/index.tsx</li>
+<li>AIChatAssistantRateLimitBanner: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/AIChatAssistant/AIChatAssistantRateLimitBanner.tsx</li>
+<li>useResponsiveLE: ../mono/libs/le-shared/redux-components/src/LEHeader/MobileHeader/ResponsiveLEHeader/ResponsiveLEHelper.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectHideBusinessAccount</strong><span>../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</span></summary>
+          <ul>
+            <li>useAppHeaderProps: ../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsLoggedIn</strong><span>../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</span></summary>
+          <ul>
+            <li>useAppHeaderProps: ../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsProPaused</strong><span>../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</span></summary>
+          <ul>
+            <li>useAppHeaderProps: ../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentUserDisplayName</strong><span>../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</span></summary>
+          <ul>
+            <li>useAppHeaderProps: ../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCanAccessCareerPaths</strong><span>../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</span></summary>
+          <ul>
+            <li>useAppHeaderProps: ../mono/libs/le-shared/components/src/AppHeader/useAppHeaderProps.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectFreeQuizzesTaken</strong><span>../mono/libs/le-shared/components/src/ContentItemIcon/Icon.tsx</span></summary>
+          <ul>
+            <li>Icon: ../mono/libs/le-shared/components/src/ContentItemIcon/Icon.tsx</li>
+<li>useHasContentItemAccess: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/SyllabusBrowserVariant/sharedComponents/ModuleDetail/ContentItems/useHasContentItemAccess.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectFreeProjectsTaken</strong><span>../mono/libs/le-shared/components/src/ContentItemIcon/Icon.tsx</span></summary>
+          <ul>
+            <li>Icon: ../mono/libs/le-shared/components/src/ContentItemIcon/Icon.tsx</li>
+<li>useHasContentItemAccess: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/SyllabusBrowserVariant/sharedComponents/ModuleDetail/ContentItems/useHasContentItemAccess.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectUserMenuItems</strong><span>../mono/libs/le-shared/components/src/MeDropdown/index.tsx</span></summary>
+          <ul>
+            <li>MeDropdown: ../mono/libs/le-shared/components/src/MeDropdown/index.tsx</li>
+<li>MobileUserMenu: ../mono/libs/le-shared/redux-components/src/MobileUserMenu/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsSandboxHeaderPage</strong><span>../mono/libs/le-shared/components/src/MeDropdown/index.tsx</span></summary>
+          <ul>
+            <li>MeDropdown: ../mono/libs/le-shared/components/src/MeDropdown/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectKanbanHasStateByContentId</strong><span>../mono/libs/le-shared/redux-scenes/src/kanbanProject/index.tsx</span></summary>
+          <ul>
+            <li>KanbanProjectPage: ../mono/libs/le-shared/redux-scenes/src/kanbanProject/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectContentItemProgress</strong><span>../mono/libs/le-shared/redux-scenes/src/kanbanProject/index.tsx</span></summary>
+          <ul>
+            <li>KanbanProjectPage: ../mono/libs/le-shared/redux-scenes/src/kanbanProject/index.tsx</li>
+<li>KanbanProjectGrid: ../mono/libs/le-shared/redux-scenes/src/kanbanProject/kanbanProjectContainer/KanbanProjectGrid/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectKanbanIsDone</strong><span>../mono/libs/le-shared/redux-scenes/src/kanbanProject/index.tsx</span></summary>
+          <ul>
+            <li>KanbanProjectPage: ../mono/libs/le-shared/redux-scenes/src/kanbanProject/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentKanbanIsStarted</strong><span>../mono/libs/le-shared/redux-scenes/src/kanbanProject/index.tsx</span></summary>
+          <ul>
+            <li>KanbanProjectPage: ../mono/libs/le-shared/redux-scenes/src/kanbanProject/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsEnterpriseLEHeaderLocation</strong><span>../mono/libs/le-shared/redux-scenes/src/kanbanProject/index.tsx</span></summary>
+          <ul>
+            <li>KanbanProjectPage: ../mono/libs/le-shared/redux-scenes/src/kanbanProject/index.tsx</li>
+<li>: ../mono/libs/le-shared/redux-scenes/src/quiz/Summary/hooks/useQuizAttemptStats.ts</li>
+<li>ToolsMenuContainer: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/ToolsTab/ToolsMenu/ToolsMenuContainer.tsx</li>
+<li>GetHelp: ../mono/libs/le-shared/redux-components/src/GetHelp/index.tsx</li>
+<li>HelpData: ../mono/libs/le-shared/redux-components/src/GetHelp/HelpData/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectKanbanTasksInformation</strong><span>../mono/libs/le-shared/redux-scenes/src/kanbanProject/kanbanProjectContainer/KanbanProjectContent/TaskList/TaskList.tsx</span></summary>
+          <ul>
+            <li>TaskList: ../mono/libs/le-shared/redux-scenes/src/kanbanProject/kanbanProjectContainer/KanbanProjectContent/TaskList/TaskList.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCumulativeAssessmentSummary</strong><span>../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/CumulativeAssessmentSummary/index.tsx</span></summary>
+          <ul>
+            <li>CumulativeAssessmentSummary: ../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/CumulativeAssessmentSummary/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectWorkshopTestResultById</strong><span>../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/CumulativeAssessmentDeck.tsx</span></summary>
+          <ul>
+            <li>CumulativeAssessmentDeck: ../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/CumulativeAssessmentDeck.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectWorkspaceFiles</strong><span>../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/CumulativeAssessmentDeck.tsx</span></summary>
+          <ul>
+            <li>CumulativeAssessmentDeck: ../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/CumulativeAssessmentDeck.tsx</li>
+<li>useSnack: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/ExpoReactNativePreview/useSnack.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsInCodeChallengeV2Variant</strong><span>../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/CumulativeAssessmentDeck.tsx</span></summary>
+          <ul>
+            <li>CumulativeAssessmentDeck: ../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/CumulativeAssessmentDeck.tsx</li>
+<li>Challenge: ../mono/libs/le-shared/redux-scenes/src/challenge/index.tsx</li>
+<li>TestCodeButton: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/CodeChallengeV2TestOutput/TestCodeButton.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCumulativeAssessment</strong><span>../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/data/useGetCumulativeAssessmentContentData.ts</span></summary>
+          <ul>
+            <li>useGetCumulativeAssessmentContentData: ../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/data/useGetCumulativeAssessmentContentData.ts</li>
+<li>TestCodeButton: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/CodeChallengeV2TestOutput/TestCodeButton.tsx</li>
+<li>ChallengeNarrative: ../mono/libs/le-shared/redux-components/src/narrative/ChallengeNarrative/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCumulativeAssessmentAttempt</strong><span>../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/data/useGetCumulativeAssessmentContentData.ts</span></summary>
+          <ul>
+            <li>useGetCumulativeAssessmentContentData: ../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/data/useGetCumulativeAssessmentContentData.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentJourneyEnrollment</strong><span>../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/data/useGetCumulativeAssessmentContentData.ts</span></summary>
+          <ul>
+            <li>useGetCumulativeAssessmentContentData: ../mono/libs/le-shared/redux-scenes/src/cumulativeAssessment/data/useGetCumulativeAssessmentContentData.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectSafeRedirectUrl</strong><span>../mono/libs/le-shared/redux-scenes/src/practicePack/SmartPractice/index.tsx</span></summary>
+          <ul>
+            <li>SmartPractice: ../mono/libs/le-shared/redux-scenes/src/practicePack/SmartPractice/index.tsx</li>
+<li>BasicPracticePack: ../mono/libs/le-shared/redux-scenes/src/practicePack/BasicPracticePack.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectRawContentItem</strong><span>../mono/libs/le-shared/redux-scenes/src/quiz/index.tsx</span></summary>
+          <ul>
+            <li>QuizScene: ../mono/libs/le-shared/redux-scenes/src/quiz/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectArePathsLoaded</strong><span>../mono/libs/le-shared/redux-scenes/src/quiz/PostQuizReviewSummary/index.tsx</span></summary>
+          <ul>
+            <li>PostQuizReviewSummary: ../mono/libs/le-shared/redux-scenes/src/quiz/PostQuizReviewSummary/index.tsx</li>
+<li>QuizSummary: ../mono/libs/le-shared/redux-scenes/src/quiz/Summary/index.tsx</li>
+<li>LENavigation: ../mono/libs/le-shared/redux-components/src/LENavigation/LENavigation.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentPracticePack</strong><span>../mono/libs/le-shared/redux-scenes/src/quiz/hooks/useGetPracticePack.ts</span></summary>
+          <ul>
+            <li>useGetPracticePack: ../mono/libs/le-shared/redux-scenes/src/quiz/hooks/useGetPracticePack.ts</li>
+<li>QuizSummary: ../mono/libs/le-shared/redux-scenes/src/quiz/Summary/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentModule</strong><span>../mono/libs/le-shared/redux-scenes/src/quiz/hooks/useGetPracticePack.ts</span></summary>
+          <ul>
+            <li>useGetPracticePack: ../mono/libs/le-shared/redux-scenes/src/quiz/hooks/useGetPracticePack.ts</li>
+<li>QuizSummary: ../mono/libs/le-shared/redux-scenes/src/quiz/Summary/index.tsx</li>
+<li>Actions: ../mono/libs/le-shared/redux-scenes/src/quiz/Summary/Summary/Actions.tsx</li>
+<li>MoreHelpSection: ../mono/libs/le-shared/redux-components/src/narrative/ProjectNarrative/MoreHelpSection/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectFreeQuizzesLeft</strong><span>../mono/libs/le-shared/redux-scenes/src/quiz/RateLimitSummaryBanner.tsx</span></summary>
+          <ul>
+            <li>: ../mono/libs/le-shared/redux-scenes/src/quiz/RateLimitSummaryBanner.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsFeatureActive</strong><span>../mono/libs/le-shared/redux-scenes/src/quiz/Quiz.tsx</span></summary>
+          <ul>
+            <li>Quiz: ../mono/libs/le-shared/redux-scenes/src/quiz/Quiz.tsx</li>
+<li>useContentItemWithSkills: ../mono/libs/le-shared/redux-scenes/src/helpers/useContentItemWithSkills.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectQuizAttemptsForCurrentQuiz</strong><span>../mono/libs/le-shared/redux-scenes/src/quiz/Quiz.tsx</span></summary>
+          <ul>
+            <li>Quiz: ../mono/libs/le-shared/redux-scenes/src/quiz/Quiz.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectHasContainerAccess</strong><span>../mono/libs/le-shared/redux-scenes/src/quiz/Quiz.tsx</span></summary>
+          <ul>
+            <li>Quiz: ../mono/libs/le-shared/redux-scenes/src/quiz/Quiz.tsx</li>
+<li>connect: ../mono/libs/le-shared/redux-components/src/narrative/Brief/ButtonGroup.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectQuizProgress</strong><span>../mono/libs/le-shared/redux-scenes/src/quiz/Summary/hooks/useQuizAttemptStats.ts</span></summary>
+          <ul>
+            <li>: ../mono/libs/le-shared/redux-scenes/src/quiz/Summary/hooks/useQuizAttemptStats.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectStudyGroupLoaded</strong><span>../mono/libs/le-shared/redux-scenes/src/utils/useFetchStudyGroup.ts</span></summary>
+          <ul>
+            <li>useFetchStudyGroup: ../mono/libs/le-shared/redux-scenes/src/utils/useFetchStudyGroup.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentProjectIsInAIProjectHintsAllowlist</strong><span>../mono/libs/le-shared/redux-scenes/src/project/project/index.tsx</span></summary>
+          <ul>
+            <li>ProjectScene: ../mono/libs/le-shared/redux-scenes/src/project/project/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsProGold</strong><span>../mono/libs/le-shared/redux-scenes/src/project/project/index.tsx</span></summary>
+          <ul>
+            <li>ProjectScene: ../mono/libs/le-shared/redux-scenes/src/project/project/index.tsx</li>
+<li>Challenge: ../mono/libs/le-shared/redux-scenes/src/challenge/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsBusinessUser</strong><span>../mono/libs/le-shared/redux-scenes/src/project/project/index.tsx</span></summary>
+          <ul>
+            <li>ProjectScene: ../mono/libs/le-shared/redux-scenes/src/project/project/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectFreeProjectsLeft</strong><span>../mono/libs/le-shared/redux-scenes/src/project/RateLimitSummaryBanner.tsx</span></summary>
+          <ul>
+            <li>: ../mono/libs/le-shared/redux-scenes/src/project/RateLimitSummaryBanner.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsEnterprise</strong><span>../mono/libs/le-shared/redux-scenes/src/sandbox/ChooseSandboxTypePage/index.tsx</span></summary>
+          <ul>
+            <li>ChooseSandboxTypePage: ../mono/libs/le-shared/redux-scenes/src/sandbox/ChooseSandboxTypePage/index.tsx</li>
+<li>SandboxHeader: ../mono/libs/le-shared/redux-scenes/src/sandbox/SandboxHeader/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentSandbox</strong><span>../mono/libs/le-shared/redux-scenes/src/sandbox/SandboxHeader/EnterpriseSandboxHeader/index.tsx</span></summary>
+          <ul>
+            <li>EnterpriseSandboxHeader: ../mono/libs/le-shared/redux-scenes/src/sandbox/SandboxHeader/EnterpriseSandboxHeader/index.tsx</li>
+<li>Header: ../mono/libs/le-shared/redux-scenes/src/sandbox/SandboxHeader/Header.tsx</li>
+<li>ShareDialog: ../mono/libs/le-shared/redux-scenes/src/sandbox/SandboxHeader/ShareDialog.tsx</li>
+<li>SandboxCodeEditor: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/SandboxCodeEditor/index.tsx</li>
+<li>Footer: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/SandboxCodeEditor/Footer.tsx</li>
+<li>SandboxFileNavigator: ../mono/libs/le-shared/redux-components/src/SandboxFileNavigator/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectHasContentItemAccess</strong><span>../mono/libs/le-shared/redux-scenes/src/containerlessContentItem/index.tsx</span></summary>
+          <ul>
+            <li>ContainerlessContentItem: ../mono/libs/le-shared/redux-scenes/src/containerlessContentItem/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsAuthor</strong><span>../mono/libs/le-shared/redux-scenes/src/containerlessContentItem/index.tsx</span></summary>
+          <ul>
+            <li>ContainerlessContentItem: ../mono/libs/le-shared/redux-scenes/src/containerlessContentItem/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentAuthorURL</strong><span>../mono/libs/le-shared/redux-scenes/src/containerlessContentItem/index.tsx</span></summary>
+          <ul>
+            <li>ContainerlessContentItem: ../mono/libs/le-shared/redux-scenes/src/containerlessContentItem/index.tsx</li>
+<li>useAuthoringShortcuts: ../mono/libs/le-shared/redux-components/src/AuthoringShortcuts/index.tsx</li>
+<li>CreatorModeMenu: ../mono/libs/le-shared/redux-components/src/Deprecated/Header/CreatorMode/CreatorModeMenu/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentExercise</strong><span>../mono/libs/le-shared/redux-scenes/src/lesson/index.tsx</span></summary>
+          <ul>
+            <li>LessonScene: ../mono/libs/le-shared/redux-scenes/src/lesson/index.tsx</li>
+<li>connect: ../mono/libs/le-shared/redux-components/src/SessionProvider/index.tsx</li>
+<li>AIChatAssistant: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/AIChatAssistant/index.tsx</li>
+<li>SolutionDiffButtonWrapper: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/SolutionDiffButtonWrapper/index.tsx</li>
+<li>CodeExplanationHeader: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/SolutionDiffModal/SolutionDiffEditor/CodeExplanation/CodeExplanationHeader.tsx</li>
+<li>useAuthoringShortcuts: ../mono/libs/le-shared/redux-components/src/AuthoringShortcuts/index.tsx</li>
+<li>MobilePaginatedCheckpoints: ../mono/libs/le-shared/redux-components/src/MobileCheckpointAccordion/MobilePaginatedCheckpoints/index.tsx</li>
+<li>LEPreview: ../mono/libs/le-shared/redux-components/src/LEPreview/index.tsx</li>
+<li>ExerciseTimeToComplete: ../mono/libs/le-shared/redux-components/src/narrative/NarrativeBody/components/ExerciseTimeToComplete.tsx</li>
+<li>ForumSection: ../mono/libs/le-shared/redux-components/src/narrative/ForumSection/index.tsx</li>
+<li>ForkButton: ../mono/libs/le-shared/redux-components/src/ForkButton/index.tsx</li>
+<li>: ../mono/libs/le-shared/redux-components/src/Deprecated/Header/SavepointOptions/index.tsx</li>
+<li>CreatorModeMenu: ../mono/libs/le-shared/redux-components/src/Deprecated/Header/CreatorMode/CreatorModeMenu/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentCheckpoint</strong><span>../mono/libs/le-shared/redux-scenes/src/lesson/index.tsx</span></summary>
+          <ul>
+            <li>LessonScene: ../mono/libs/le-shared/redux-scenes/src/lesson/index.tsx</li>
+<li>AIChatContentFeedback: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/AIChatAssistant/AIChatFeedback/AIChatContentFeedback.tsx</li>
+<li>SolutionDiffButtonWrapper: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/SolutionDiffButtonWrapper/index.tsx</li>
+<li>SolutionDiffEditorWrapper: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/SolutionDiffModal/SolutionDiffEditor/index.tsx</li>
+<li>LEExerciseNavigation: ../mono/libs/le-shared/redux-components/src/LENavigation/LEExerciseNavigation.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentCheckpointIndex</strong><span>../mono/libs/le-shared/redux-scenes/src/lesson/index.tsx</span></summary>
+          <ul>
+            <li>LessonScene: ../mono/libs/le-shared/redux-scenes/src/lesson/index.tsx</li>
+<li>RunButton: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/RunButton/index.tsx</li>
+<li>MobilePaginatedCheckpoints: ../mono/libs/le-shared/redux-components/src/MobileCheckpointAccordion/MobilePaginatedCheckpoints/index.tsx</li>
+<li>ComponentSuccessDisplay: ../mono/libs/le-shared/redux-components/src/ComponentSuccessDisplay/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentLessonExercises</strong><span>../mono/libs/le-shared/redux-scenes/src/lesson/index.tsx</span></summary>
+          <ul>
+            <li>LessonScene: ../mono/libs/le-shared/redux-scenes/src/lesson/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectFarthestCheckpointForCurrentExercise</strong><span>../mono/libs/le-shared/redux-scenes/src/lesson/exercise/hooks.tsx</span></summary>
+          <ul>
+            <li>useSetupCommand: ../mono/libs/le-shared/redux-scenes/src/lesson/exercise/hooks.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectChallengeForumTopic</strong><span>../mono/libs/le-shared/redux-scenes/src/challenge/CompletionInterstitial/index.tsx</span></summary>
+          <ul>
+            <li>CompletionInterstitial: ../mono/libs/le-shared/redux-scenes/src/challenge/CompletionInterstitial/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentContentItemComponents</strong><span>../mono/libs/le-shared/redux-scenes/src/helpers/useCheckIfMobileModal.tsx</span></summary>
+          <ul>
+            <li>useCheckIfMobileModal: ../mono/libs/le-shared/redux-scenes/src/helpers/useCheckIfMobileModal.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectHasOneTimeTrigger</strong><span>../mono/libs/le-shared/redux-scenes/src/helpers/useCheckIfMobileModal.tsx</span></summary>
+          <ul>
+            <li>useCheckIfMobileModal: ../mono/libs/le-shared/redux-scenes/src/helpers/useCheckIfMobileModal.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectMemberSince</strong><span>../mono/libs/le-shared/redux-scenes/src/helpers/useCheckIfMobileModal.tsx</span></summary>
+          <ul>
+            <li>useCheckIfMobileModal: ../mono/libs/le-shared/redux-scenes/src/helpers/useCheckIfMobileModal.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectAILessonWalkthroughEligibleAndVariant</strong><span>../mono/libs/le-shared/redux-components/src/Hint/index.tsx</span></summary>
+          <ul>
+            <li>Hint: ../mono/libs/le-shared/redux-components/src/Hint/index.tsx</li>
+<li>SolutionDiffButtonWrapper: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/SolutionDiffButtonWrapper/index.tsx</li>
+<li>SolutionDiffEditorWrapper: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/SolutionDiffModal/SolutionDiffEditor/index.tsx</li>
+<li>SolutionDiffEditor: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/SolutionDiffModal/SolutionDiffEditor/SolutionDiffEditor.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectShowFullPreview</strong><span>../mono/libs/le-shared/redux-components/src/SessionProvider/index.tsx</span></summary>
+          <ul>
+            <li>connect: ../mono/libs/le-shared/redux-components/src/SessionProvider/index.tsx</li>
+<li>AIChatAssistant: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/AIChatAssistant/index.tsx</li>
+<li>OutputTerminalWrapper: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/OutputTerminal/index.tsx</li>
+<li>PersistentCodeEditorWrapper: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/PersistentCodeEditor/index.tsx</li>
+<li>SQLPreviewWrapper: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/SQLPreview/index.tsx</li>
+<li>ResetButton: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/ResetButton/index.tsx</li>
+<li>DesktopHeader: ../mono/libs/le-shared/redux-components/src/LEHeader/DesktopHeader/index.tsx</li>
+<li>MobileHeader: ../mono/libs/le-shared/redux-components/src/LEHeader/MobileHeader/index.tsx</li>
+<li>MobileNavMenu: ../mono/libs/le-shared/redux-components/src/LEHeader/MobileHeader/MobileNavMenu/index.tsx</li>
+<li>useMobileNavConfig: ../mono/libs/le-shared/redux-components/src/LEHeader/MobileHeader/MobileNavMenu/useMobileNavConfig.tsx</li>
+<li>WebBrowserContainer: ../mono/libs/le-shared/redux-components/src/WebBrowser/WebBrowserContainer.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentProject</strong><span>../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/AIChatAssistant/index.tsx</span></summary>
+          <ul>
+            <li>AIChatAssistant: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/AIChatAssistant/index.tsx</li>
+<li>ProjectReviewModal: ../mono/libs/le-shared/redux-components/src/narrative/ProjectReviewMain/ProjectReviewModal.tsx</li>
+<li>ProjectReviewSection: ../mono/libs/le-shared/redux-components/src/narrative/Brief/ProjectReviewSection.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectHasAIErrorFeedbackEligibility</strong><span>../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/OutputTerminal/OutputErrorFeedback/index.tsx</span></summary>
+          <ul>
+            <li>OutputErrorFeedback: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/OutputTerminal/OutputErrorFeedback/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectAdminAuthoringMode</strong><span>../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/PersistentCodeEditor/MissingFileModal/index.tsx</span></summary>
+          <ul>
+            <li>MissingFileModal: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/PersistentCodeEditor/MissingFileModal/index.tsx</li>
+<li>PersistentCodeEditorWrapper: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/PersistentCodeEditor/index.tsx</li>
+<li>AIChatHeader: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/AIChat/AIChatHeader/index.tsx</li>
+<li>ComponentFooter: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/ComponentFooter/index.tsx</li>
+<li>AuthoringBadge: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/AuthoringBadge.tsx</li>
+<li>DesktopHeader: ../mono/libs/le-shared/redux-components/src/LEHeader/DesktopHeader/index.tsx</li>
+<li>: ../mono/libs/le-shared/redux-components/src/Deprecated/Header/SavepointOptions/index.tsx</li>
+<li>AuthoringModeToggle: ../mono/libs/le-shared/redux-components/src/Deprecated/Header/CreatorMode/CreatorModeMenu/components/AuthoringModeToggle.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentModuleHasReviewCards</strong><span>../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/PersistentCodeEditor/index.tsx</span></summary>
+          <ul>
+            <li>PersistentCodeEditorWrapper: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/PersistentCodeEditor/index.tsx</li>
+<li>HelpData: ../mono/libs/le-shared/redux-components/src/GetHelp/HelpData/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsChallengeLocation</strong><span>../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/PersistentCodeEditor/index.tsx</span></summary>
+          <ul>
+            <li>PersistentCodeEditorWrapper: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/PersistentCodeEditor/index.tsx</li>
+<li>CodeEditorTabs: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/PersistentCodeEditor/Tabs.tsx</li>
+<li>CodeChallengeV2TestOutput: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/CodeChallengeV2TestOutput/index.tsx</li>
+<li>ToolsMenuContainer: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/ToolsTab/ToolsMenu/ToolsMenuContainer.tsx</li>
+<li>HelpData: ../mono/libs/le-shared/redux-components/src/GetHelp/HelpData/index.tsx</li>
+<li>useContentType: ../mono/libs/le-shared/redux-components/src/MobileWarningWall/useContentType.ts</li>
+<li>WebBrowserContainer: ../mono/libs/le-shared/redux-components/src/WebBrowser/WebBrowserContainer.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsPathCumulativeAssessmentLocation</strong><span>../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/PersistentCodeEditor/index.tsx</span></summary>
+          <ul>
+            <li>PersistentCodeEditorWrapper: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/PersistentCodeEditor/index.tsx</li>
+<li>CodeEditorTabs: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/PersistentCodeEditor/Tabs.tsx</li>
+<li>CodeChallengeV2TestOutput: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/CodeChallengeV2TestOutput/index.tsx</li>
+<li>ToolsMenuContainer: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/ToolsTab/ToolsMenu/ToolsMenuContainer.tsx</li>
+<li>WebBrowserContainer: ../mono/libs/le-shared/redux-components/src/WebBrowser/WebBrowserContainer.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectAreAllWorkspaceFilesLoaded</strong><span>../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/ExpoReactNativePreview/useSnack.ts</span></summary>
+          <ul>
+            <li>useSnack: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/ExpoReactNativePreview/useSnack.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectSessionOpenFiles</strong><span>../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/ExpoReactNativePreview/useSnack.ts</span></summary>
+          <ul>
+            <li>useSnack: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/ExpoReactNativePreview/useSnack.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentChallengeExercise</strong><span>../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/CodeChallengeNarrative/index.tsx</span></summary>
+          <ul>
+            <li>CodeChallengeNarrative: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/CodeChallengeNarrative/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentContentItemProgress</strong><span>../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/ProjectBrief/index.tsx</span></summary>
+          <ul>
+            <li>ProjectBrief: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/ProjectBrief/index.tsx</li>
+<li>MobilePaginatedCheckpoints: ../mono/libs/le-shared/redux-components/src/MobileCheckpointAccordion/MobilePaginatedCheckpoints/index.tsx</li>
+<li>AIHint: ../mono/libs/le-shared/redux-components/src/narrative/AIHint/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectWorkspaceIndex</strong><span>../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/libs/useOpenCurrentFile.ts</span></summary>
+          <ul>
+            <li>useOpenCurrentFile: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/libs/useOpenCurrentFile.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsSandboxOwner</strong><span>../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/SandboxCodeEditor/index.tsx</span></summary>
+          <ul>
+            <li>SandboxCodeEditor: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/LayoutComponents/SandboxCodeEditor/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectSavepointStatus</strong><span>../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/AuthoringTools/components/ActionButton/index.tsx</span></summary>
+          <ul>
+            <li>ActionButton: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/AuthoringTools/components/ActionButton/index.tsx</li>
+<li>IconWithStatus: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/AuthoringTools/components/IconWithStatus/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentModuleReviewLink</strong><span>../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/ReviewButton/index.tsx</span></summary>
+          <ul>
+            <li>ReviewButton: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/ReviewButton/index.tsx</li>
+<li>MoreHelpSection: ../mono/libs/le-shared/redux-components/src/narrative/ProjectNarrative/MoreHelpSection/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsOnExerciseRoute</strong><span>../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/SolutionDiffModal/index.tsx</span></summary>
+          <ul>
+            <li>SolutionDiffModal: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/SolutionDiffModal/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentExerciseHasPersistentCodeEditor</strong><span>../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/SolutionDiffModal/index.tsx</span></summary>
+          <ul>
+            <li>SolutionDiffModal: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/SolutionDiffModal/index.tsx</li>
+<li>HelpData: ../mono/libs/le-shared/redux-components/src/GetHelp/HelpData/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentExerciseHasExpoCodeEditor</strong><span>../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/SolutionDiffModal/index.tsx</span></summary>
+          <ul>
+            <li>SolutionDiffModal: ../mono/libs/le-shared/redux-components/src/SessionProvider/consumers/SolutionDiffModal/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsTalent</strong><span>../mono/libs/le-shared/redux-components/src/Assessments/CheckAnswer/index.tsx</span></summary>
+          <ul>
+            <li>CheckAnswer: ../mono/libs/le-shared/redux-components/src/Assessments/CheckAnswer/index.tsx</li>
+<li>FeedbackAnimation: ../mono/libs/le-shared/redux-components/src/Assessments/CheckAnswer/FeedbackAnimation.tsx</li>
+<li>HelpData: ../mono/libs/le-shared/redux-components/src/GetHelp/HelpData/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectHasCreatorMode</strong><span>../mono/libs/le-shared/redux-components/src/AuthoringShortcuts/index.tsx</span></summary>
+          <ul>
+            <li>useAuthoringShortcuts: ../mono/libs/le-shared/redux-components/src/AuthoringShortcuts/index.tsx</li>
+<li>AdminTab: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/AdminTab.tsx</li>
+<li>DesktopHeader: ../mono/libs/le-shared/redux-components/src/LEHeader/DesktopHeader/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCanShareCode</strong><span>../mono/libs/le-shared/redux-components/src/LEHeader/tabs/ToolsTab/ToolsMenu/index.tsx</span></summary>
+          <ul>
+            <li>ToolsMenu: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/ToolsTab/ToolsMenu/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsSandboxLocation</strong><span>../mono/libs/le-shared/redux-components/src/LEHeader/tabs/ToolsTab/ToolsMenu/index.tsx</span></summary>
+          <ul>
+            <li>ToolsMenu: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/ToolsTab/ToolsMenu/index.tsx</li>
+<li>HelpData: ../mono/libs/le-shared/redux-components/src/GetHelp/HelpData/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsForkSupportedContentItem</strong><span>../mono/libs/le-shared/redux-components/src/LEHeader/tabs/ToolsTab/ToolsMenu/index.tsx</span></summary>
+          <ul>
+            <li>ToolsMenu: ../mono/libs/le-shared/redux-components/src/LEHeader/tabs/ToolsTab/ToolsMenu/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsContainerLessProjectLocation</strong><span>../mono/libs/le-shared/redux-components/src/LEHeader/MobileHeader/MobileNavMenu/useMobileNavConfig.tsx</span></summary>
+          <ul>
+            <li>useMobileNavConfig: ../mono/libs/le-shared/redux-components/src/LEHeader/MobileHeader/MobileNavMenu/useMobileNavConfig.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsSkillsBenchmark</strong><span>../mono/libs/le-shared/redux-components/src/LEHeader/EnterpriseHeader/index.tsx</span></summary>
+          <ul>
+            <li>EnterpriseHeader: ../mono/libs/le-shared/redux-components/src/LEHeader/EnterpriseHeader/index.tsx</li>
+<li>HelpData: ../mono/libs/le-shared/redux-components/src/GetHelp/HelpData/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectShowPlatformEmailVerificationAlert</strong><span>../mono/libs/le-shared/redux-components/src/PlatformServerAlerts.tsx</span></summary>
+          <ul>
+            <li>PlatformServerAlerts: ../mono/libs/le-shared/redux-components/src/PlatformServerAlerts.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectPreviousContentItemPath</strong><span>../mono/libs/le-shared/redux-components/src/LENavigation/LEExerciseNavigation.tsx</span></summary>
+          <ul>
+            <li>LEExerciseNavigation: ../mono/libs/le-shared/redux-components/src/LENavigation/LEExerciseNavigation.tsx</li>
+<li>LENavigation: ../mono/libs/le-shared/redux-components/src/LENavigation/LENavigation.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsConsumerApplication</strong><span>../mono/libs/le-shared/redux-components/src/LENavigation/LEExerciseNavigation.tsx</span></summary>
+          <ul>
+            <li>LEExerciseNavigation: ../mono/libs/le-shared/redux-components/src/LENavigation/LEExerciseNavigation.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectAdminAllowAllNavigation</strong><span>../mono/libs/le-shared/redux-components/src/LENavigation/LEProjectNavigation.tsx</span></summary>
+          <ul>
+            <li>LEProjectNavigation: ../mono/libs/le-shared/redux-components/src/LENavigation/LEProjectNavigation.tsx</li>
+<li>LESyllabusBrowser: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/index.tsx</li>
+<li>UnlockNavigation: ../mono/libs/le-shared/redux-components/src/Deprecated/Header/CreatorMode/CreatorModeMenu/components/UnlockNavigation.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsPastDue</strong><span>../mono/libs/le-shared/redux-components/src/LENavigation/LENavigation.tsx</span></summary>
+          <ul>
+            <li>LENavigation: ../mono/libs/le-shared/redux-components/src/LENavigation/LENavigation.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentProjectProjectInformation</strong><span>../mono/libs/le-shared/redux-components/src/MobileCheckpointAccordion/MobilePaginatedCheckpoints/index.tsx</span></summary>
+          <ul>
+            <li>MobilePaginatedCheckpoints: ../mono/libs/le-shared/redux-components/src/MobileCheckpointAccordion/MobilePaginatedCheckpoints/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCheckpointRunning</strong><span>../mono/libs/le-shared/redux-components/src/MobileCheckpointAccordion/MobilePaginatedCheckpoints/MobileLessonCheckpoints/index.tsx</span></summary>
+          <ul>
+            <li>MobileLessonCheckpoints: ../mono/libs/le-shared/redux-components/src/MobileCheckpointAccordion/MobilePaginatedCheckpoints/MobileLessonCheckpoints/index.tsx</li>
+<li>ComponentSuccessDisplay: ../mono/libs/le-shared/redux-components/src/ComponentSuccessDisplay/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCheckpointFailed</strong><span>../mono/libs/le-shared/redux-components/src/MobileCheckpointAccordion/MobilePaginatedCheckpoints/MobileLessonCheckpoints/index.tsx</span></summary>
+          <ul>
+            <li>MobileLessonCheckpoints: ../mono/libs/le-shared/redux-components/src/MobileCheckpointAccordion/MobilePaginatedCheckpoints/MobileLessonCheckpoints/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCheckpointPassive</strong><span>../mono/libs/le-shared/redux-components/src/MobileCheckpointAccordion/MobilePaginatedCheckpoints/MobileLessonCheckpoints/index.tsx</span></summary>
+          <ul>
+            <li>MobileLessonCheckpoints: ../mono/libs/le-shared/redux-components/src/MobileCheckpointAccordion/MobilePaginatedCheckpoints/MobileLessonCheckpoints/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectContentItemBySlug</strong><span>../mono/libs/le-shared/redux-components/src/LEPreview/index.tsx</span></summary>
+          <ul>
+            <li>LEPreview: ../mono/libs/le-shared/redux-components/src/LEPreview/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentLessonExerciseIndex</strong><span>../mono/libs/le-shared/redux-components/src/LEPreview/index.tsx</span></summary>
+          <ul>
+            <li>LEPreview: ../mono/libs/le-shared/redux-components/src/LEPreview/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectLessonWalkthroughVideoURL</strong><span>../mono/libs/le-shared/redux-components/src/narrative/VideoSection/index.tsx</span></summary>
+          <ul>
+            <li>VideoSection: ../mono/libs/le-shared/redux-components/src/narrative/VideoSection/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectUserAssignmentInExerciseTimeToCompleteExperiment</strong><span>../mono/libs/le-shared/redux-components/src/narrative/NarrativeBody/components/ExerciseTimeToComplete.tsx</span></summary>
+          <ul>
+            <li>ExerciseTimeToComplete: ../mono/libs/le-shared/redux-components/src/narrative/NarrativeBody/components/ExerciseTimeToComplete.tsx</li>
+<li>Module: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/Module.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectExerciseForumData</strong><span>../mono/libs/le-shared/redux-components/src/narrative/ForumSection/index.tsx</span></summary>
+          <ul>
+            <li>ForumSection: ../mono/libs/le-shared/redux-components/src/narrative/ForumSection/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectHasCourseContentItemAccess</strong><span>../mono/libs/le-shared/redux-components/src/narrative/ProjectNarrative/DownloadButton.tsx</span></summary>
+          <ul>
+            <li>DownloadButton: ../mono/libs/le-shared/redux-components/src/narrative/ProjectNarrative/DownloadButton.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectTerminals</strong><span>../mono/libs/le-shared/redux-components/src/Terminal/hooks.tsx</span></summary>
+          <ul>
+            <li>useTerminalCallbacks: ../mono/libs/le-shared/redux-components/src/Terminal/hooks.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectSessionRequiresIframeAuth</strong><span>../mono/libs/le-shared/redux-components/src/SessionAuthProvider/index.tsx</span></summary>
+          <ul>
+            <li>actions: ../mono/libs/le-shared/redux-components/src/SessionAuthProvider/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectSessionConnectionState</strong><span>../mono/libs/le-shared/redux-components/src/WorkspaceStatus/ConnectedWorkspaceStatus.tsx</span></summary>
+          <ul>
+            <li>ConnectedWorkspaceStatus: ../mono/libs/le-shared/redux-components/src/WorkspaceStatus/ConnectedWorkspaceStatus.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectGeneratedWorkspaceSlug</strong><span>../mono/libs/le-shared/redux-components/src/AuthoringWorkspaceSlugModal/ConnectedAuthoringWorkspaceSlugModal.tsx</span></summary>
+          <ul>
+            <li>ConnectedAuthoringWorkspaceSlugModal: ../mono/libs/le-shared/redux-components/src/AuthoringWorkspaceSlugModal/ConnectedAuthoringWorkspaceSlugModal.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentContentWorkspace</strong><span>../mono/libs/le-shared/redux-components/src/AuthoringWorkspaceSlugModal/ConnectedAuthoringWorkspaceSlugModal.tsx</span></summary>
+          <ul>
+            <li>ConnectedAuthoringWorkspaceSlugModal: ../mono/libs/le-shared/redux-components/src/AuthoringWorkspaceSlugModal/ConnectedAuthoringWorkspaceSlugModal.tsx</li>
+<li>ForkButton: ../mono/libs/le-shared/redux-components/src/ForkButton/index.tsx</li>
+<li>CreatorModeMenu: ../mono/libs/le-shared/redux-components/src/Deprecated/Header/CreatorMode/CreatorModeMenu/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsPreviewQuery</strong><span>../mono/libs/le-shared/redux-components/src/FreeResponseQuestion/libs/FreeResponseQuestionContext.tsx</span></summary>
+          <ul>
+            <li>FreeResponseQuestionContextProvider: ../mono/libs/le-shared/redux-components/src/FreeResponseQuestion/libs/FreeResponseQuestionContext.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsDraftQuery</strong><span>../mono/libs/le-shared/redux-components/src/FreeResponseQuestion/libs/FreeResponseQuestionContext.tsx</span></summary>
+          <ul>
+            <li>FreeResponseQuestionContextProvider: ../mono/libs/le-shared/redux-components/src/FreeResponseQuestion/libs/FreeResponseQuestionContext.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentEmoduleHasReviewCards</strong><span>../mono/libs/le-shared/redux-components/src/GetHelp/HelpData/index.tsx</span></summary>
+          <ul>
+            <li>HelpData: ../mono/libs/le-shared/redux-components/src/GetHelp/HelpData/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentExerciseHasJupyterBrowser</strong><span>../mono/libs/le-shared/redux-components/src/GetHelp/HelpData/index.tsx</span></summary>
+          <ul>
+            <li>HelpData: ../mono/libs/le-shared/redux-components/src/GetHelp/HelpData/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentExerciseWorkspaceType</strong><span>../mono/libs/le-shared/redux-components/src/GetHelp/HelpData/index.tsx</span></summary>
+          <ul>
+            <li>HelpData: ../mono/libs/le-shared/redux-components/src/GetHelp/HelpData/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectStudyGroup</strong><span>../mono/libs/le-shared/redux-components/src/GetHelp/HelpData/index.tsx</span></summary>
+          <ul>
+            <li>HelpData: ../mono/libs/le-shared/redux-components/src/GetHelp/HelpData/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectSandboxContainerType</strong><span>../mono/libs/le-shared/redux-components/src/GetHelp/CheatsheetsSection/index.tsx</span></summary>
+          <ul>
+            <li>CheatsheetsSection: ../mono/libs/le-shared/redux-components/src/GetHelp/CheatsheetsSection/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsCourseLocation</strong><span>../mono/libs/le-shared/redux-components/src/MobileWarningWall/useContentType.ts</span></summary>
+          <ul>
+            <li>useContentType: ../mono/libs/le-shared/redux-components/src/MobileWarningWall/useContentType.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsPathLocation</strong><span>../mono/libs/le-shared/redux-components/src/MobileWarningWall/useContentType.ts</span></summary>
+          <ul>
+            <li>useContentType: ../mono/libs/le-shared/redux-components/src/MobileWarningWall/useContentType.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectProExclusiveCoursesSet</strong><span>../mono/libs/le-shared/redux-components/src/MobileWarningWall/useReminderEmailData.ts</span></summary>
+          <ul>
+            <li>useReminderEmailData: ../mono/libs/le-shared/redux-components/src/MobileWarningWall/useReminderEmailData.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentStandAloneProject</strong><span>../mono/libs/le-shared/redux-components/src/MobileWarningWall/useReminderEmailData.ts</span></summary>
+          <ul>
+            <li>useReminderEmailData: ../mono/libs/le-shared/redux-components/src/MobileWarningWall/useReminderEmailData.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentChallenge</strong><span>../mono/libs/le-shared/redux-components/src/MobileWarningWall/useReminderEmailData.ts</span></summary>
+          <ul>
+            <li>useReminderEmailData: ../mono/libs/le-shared/redux-components/src/MobileWarningWall/useReminderEmailData.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectUserHasMobileUser</strong><span>../mono/libs/le-shared/redux-components/src/MobileWarningWall/Views/LoggedIn.tsx</span></summary>
+          <ul>
+            <li>LoggedInView: ../mono/libs/le-shared/redux-components/src/MobileWarningWall/Views/LoggedIn.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCanAccessProContent</strong><span>../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/SyllabusBrowserVariant/sharedComponents/ModuleDetail/ContentItems/useHasContentItemAccess.tsx</span></summary>
+          <ul>
+            <li>useHasContentItemAccess: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/SyllabusBrowserVariant/sharedComponents/ModuleDetail/ContentItems/useHasContentItemAccess.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectNavLinkTitle</strong><span>../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/SyllabusBrowserContainer.tsx</span></summary>
+          <ul>
+            <li>SyllabusBrowserContainer: ../mono/libs/le-shared/redux-components/src/LESyllabusBrowser/SyllabusBrowserContainer.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectLocationQuery</strong><span>../mono/libs/le-shared/redux/src/state/location/hooks.ts</span></summary>
+          <ul>
+            <li>useOneTimeQueryParam: ../mono/libs/le-shared/redux/src/state/location/hooks.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectLocationParams</strong><span>../mono/libs/le-shared/redux/src/state/location/hooks.ts</span></summary>
+          <ul>
+            <li>useLocationParams: ../mono/libs/le-shared/redux/src/state/location/hooks.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectActiveFeatures</strong><span>../mono/libs/le-shared/redux/src/state/hooks/useSetDatadogContext.ts</span></summary>
+          <ul>
+            <li>: ../mono/libs/le-shared/redux/src/state/hooks/useSetDatadogContext.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentUserExperiments</strong><span>../mono/libs/le-shared/redux/src/state/hooks/useSetDatadogContext.ts</span></summary>
+          <ul>
+            <li>: ../mono/libs/le-shared/redux/src/state/hooks/useSetDatadogContext.ts</li>
+<li>useClientsideExperimentAssignmentHandler: ../mono/libs/le-shared/redux/src/state/hooks/useClientsideExperimentAssignmentHandler.tsx</li>
+<li>useClientsideExperiment: ../mono/libs/le-shared/redux/src/state/hooks/useClientsideExperiment.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentUser</strong><span>../mono/libs/le-shared/redux/src/state/currentUser/hooks.ts</span></summary>
+          <ul>
+            <li>: ../mono/libs/le-shared/redux/src/state/currentUser/hooks.ts</li>
+<li>useAllowWorkspaceOrSavePointEdit: ../mono/libs/le-shared/redux/src/hooks/useAllowWorkspaceOrSavePointEdit.ts</li>
+<li>useIsInAIProjectReviewExperiment: ../mono/libs/le-shared/redux/src/hooks/ai/useIsInAIProjectReviewExperiment.tsx</li>
+<li>useIsAIChatAssistantEnabled: ../mono/libs/le-shared/redux/src/hooks/ai/useIsAIChatAssistantEnabled.ts</li>
+<li>useIsAIHintEnabled: ../mono/libs/le-shared/redux/src/hooks/ai/useIsAIHintEnabled.ts</li>
+<li>useAIPromptDisclaimer: ../mono/libs/le-shared/redux/src/hooks/ai/useAIPromptDisclaimer.ts</li>
+<li>useIsInRateLimitExperiment: ../mono/libs/le-shared/redux/src/hooks/ai/useIsInRateLimitExperiment.tsx</li>
+<li>useAIAssistant: ../mono/libs/le-shared/redux/src/hooks/ai/useAIAssistant.tsx</li>
+<li>useIsEnterprise: ../mono/libs/le-shared/redux/src/hooks/useIsEnterprise.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectContentItemProgress</strong><span>../mono/libs/le-shared/redux/src/hooks/useChallengeProgress/index.tsx</span></summary>
+          <ul>
+            <li>useChallengeProgress: ../mono/libs/le-shared/redux/src/hooks/useChallengeProgress/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentChallenge</strong><span>../mono/libs/le-shared/redux/src/hooks/useChallengeProgress/index.tsx</span></summary>
+          <ul>
+            <li>useChallengeProgress: ../mono/libs/le-shared/redux/src/hooks/useChallengeProgress/index.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectTrackingPageNameAndContentIds</strong><span>../mono/libs/le-shared/redux/src/hooks/useAIProjectHintTracking.tsx</span></summary>
+          <ul>
+            <li>useAIProjectHintTracking: ../mono/libs/le-shared/redux/src/hooks/useAIProjectHintTracking.tsx</li>
+<li>useAIProjectReviewTracking: ../mono/libs/le-shared/redux/src/hooks/ai/useAIProjectReviewTracking.tsx</li>
+<li>useAICodeExplainTracking: ../mono/libs/le-shared/redux/src/hooks/ai/useAICodeExplainTracking.tsx</li>
+<li>useAIPETracking: ../mono/libs/le-shared/redux/src/hooks/ai/useAIPETracking.tsx</li>
+<li>useAIChatAssistantTracking: ../mono/libs/le-shared/redux/src/hooks/ai/useAIChatAssistantTracking.tsx</li>
+<li>useAIErrorExplainTracking: ../mono/libs/le-shared/redux/src/hooks/ai/useAIErrorExplainTracking.tsx</li>
+<li>useChallengeTracking: ../mono/libs/le-shared/redux/src/hooks/useChallengeTracking.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentContentItem</strong><span>../mono/libs/le-shared/redux/src/hooks/useAllowWorkspaceOrSavePointEdit.ts</span></summary>
+          <ul>
+            <li>useAllowWorkspaceOrSavePointEdit: ../mono/libs/le-shared/redux/src/hooks/useAllowWorkspaceOrSavePointEdit.ts</li>
+<li>useAIProjectReviewTracking: ../mono/libs/le-shared/redux/src/hooks/ai/useAIProjectReviewTracking.tsx</li>
+<li>useAICodeExplainTracking: ../mono/libs/le-shared/redux/src/hooks/ai/useAICodeExplainTracking.tsx</li>
+<li>useIsAIChatAssistantEnabled: ../mono/libs/le-shared/redux/src/hooks/ai/useIsAIChatAssistantEnabled.ts</li>
+<li>useAIPETracking: ../mono/libs/le-shared/redux/src/hooks/ai/useAIPETracking.tsx</li>
+<li>useAIPromptDisclaimer: ../mono/libs/le-shared/redux/src/hooks/ai/useAIPromptDisclaimer.ts</li>
+<li>useAIChatAssistantTracking: ../mono/libs/le-shared/redux/src/hooks/ai/useAIChatAssistantTracking.tsx</li>
+<li>useAIErrorExplainTracking: ../mono/libs/le-shared/redux/src/hooks/ai/useAIErrorExplainTracking.tsx</li>
+<li>useAIAssistant: ../mono/libs/le-shared/redux/src/hooks/ai/useAIAssistant.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentAssessment</strong><span>../mono/libs/le-shared/redux/src/hooks/useAllowWorkspaceOrSavePointEdit.ts</span></summary>
+          <ul>
+            <li>useAllowWorkspaceOrSavePointEdit: ../mono/libs/le-shared/redux/src/hooks/useAllowWorkspaceOrSavePointEdit.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectUserJWT</strong><span>../mono/libs/le-shared/redux/src/hooks/useUserStudyGroup.tsx</span></summary>
+          <ul>
+            <li>useUserStudyGroup: ../mono/libs/le-shared/redux/src/hooks/useUserStudyGroup.tsx</li>
+<li>useAIPromptDisclaimer: ../mono/libs/le-shared/redux/src/hooks/ai/useAIPromptDisclaimer.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentJourney</strong><span>../mono/libs/le-shared/redux/src/hooks/useUserStudyGroup.tsx</span></summary>
+          <ul>
+            <li>useUserStudyGroup: ../mono/libs/le-shared/redux/src/hooks/useUserStudyGroup.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentPath</strong><span>../mono/libs/le-shared/redux/src/hooks/useUserStudyGroup.tsx</span></summary>
+          <ul>
+            <li>useUserStudyGroup: ../mono/libs/le-shared/redux/src/hooks/useUserStudyGroup.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentTrack</strong><span>../mono/libs/le-shared/redux/src/hooks/ai/useIsInAIProjectReviewExperiment.tsx</span></summary>
+          <ul>
+            <li>useIsInAIProjectReviewExperiment: ../mono/libs/le-shared/redux/src/hooks/ai/useIsInAIProjectReviewExperiment.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentExercise</strong><span>../mono/libs/le-shared/redux/src/hooks/ai/useIsAIChatAssistantEnabled.ts</span></summary>
+          <ul>
+            <li>useIsAIChatAssistantEnabled: ../mono/libs/le-shared/redux/src/hooks/ai/useIsAIChatAssistantEnabled.ts</li>
+<li>useAIAssistant: ../mono/libs/le-shared/redux/src/hooks/ai/useAIAssistant.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsPro</strong><span>../mono/libs/le-shared/redux/src/hooks/ai/useIsAIChatAssistantEnabled.ts</span></summary>
+          <ul>
+            <li>useIsAIChatAssistantEnabled: ../mono/libs/le-shared/redux/src/hooks/ai/useIsAIChatAssistantEnabled.ts</li>
+<li>useIsAIHintEnabled: ../mono/libs/le-shared/redux/src/hooks/ai/useIsAIHintEnabled.ts</li>
+<li>useIsInRateLimitExperiment: ../mono/libs/le-shared/redux/src/hooks/ai/useIsInRateLimitExperiment.tsx</li>
+<li>useAILimitState: ../mono/libs/le-shared/redux/src/hooks/ai/useAILimitState.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsChallengeLocation</strong><span>../mono/libs/le-shared/redux/src/hooks/ai/useIsAIChatAssistantEnabled.ts</span></summary>
+          <ul>
+            <li>useIsAIChatAssistantEnabled: ../mono/libs/le-shared/redux/src/hooks/ai/useIsAIChatAssistantEnabled.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsPathCumulativeAssessmentLocation</strong><span>../mono/libs/le-shared/redux/src/hooks/ai/useIsAIChatAssistantEnabled.ts</span></summary>
+          <ul>
+            <li>useIsAIChatAssistantEnabled: ../mono/libs/le-shared/redux/src/hooks/ai/useIsAIChatAssistantEnabled.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectShowFullPreview</strong><span>../mono/libs/le-shared/redux/src/hooks/ai/useIsAIChatAssistantEnabled.ts</span></summary>
+          <ul>
+            <li>useIsAIChatAssistantEnabled: ../mono/libs/le-shared/redux/src/hooks/ai/useIsAIChatAssistantEnabled.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectAdminAuthoringMode</strong><span>../mono/libs/le-shared/redux/src/hooks/ai/useAIProjectReviewState.ts</span></summary>
+          <ul>
+            <li>useAIProjectReviewState: ../mono/libs/le-shared/redux/src/hooks/ai/useAIProjectReviewState.ts</li>
+<li>useAIAssistant: ../mono/libs/le-shared/redux/src/hooks/ai/useAIAssistant.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentProject</strong><span>../mono/libs/le-shared/redux/src/hooks/ai/useIsAIHintEnabled.ts</span></summary>
+          <ul>
+            <li>useIsAIHintEnabled: ../mono/libs/le-shared/redux/src/hooks/ai/useIsAIHintEnabled.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsBusinessUser</strong><span>../mono/libs/le-shared/redux/src/hooks/ai/useIsAIHintEnabled.ts</span></summary>
+          <ul>
+            <li>useIsAIHintEnabled: ../mono/libs/le-shared/redux/src/hooks/ai/useIsAIHintEnabled.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentModal</strong><span>../mono/libs/le-shared/redux/src/hooks/ai/useAIPromptDisclaimer.ts</span></summary>
+          <ul>
+            <li>useAIPromptDisclaimer: ../mono/libs/le-shared/redux/src/hooks/ai/useAIPromptDisclaimer.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectContentContext</strong><span>../mono/libs/le-shared/redux/src/hooks/ai/useAIPromptState.ts</span></summary>
+          <ul>
+            <li>useAIPromptState: ../mono/libs/le-shared/redux/src/hooks/ai/useAIPromptState.ts</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectContainerIdForAssistant</strong><span>../mono/libs/le-shared/redux/src/hooks/ai/useAIPromptState.ts</span></summary>
+          <ul>
+            <li>useAIPromptState: ../mono/libs/le-shared/redux/src/hooks/ai/useAIPromptState.ts</li>
+<li>useAIAssistant: ../mono/libs/le-shared/redux/src/hooks/ai/useAIAssistant.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentCheckpointIndex</strong><span>../mono/libs/le-shared/redux/src/hooks/ai/useAIAssistant.tsx</span></summary>
+          <ul>
+            <li>useAIAssistant: ../mono/libs/le-shared/redux/src/hooks/ai/useAIAssistant.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentEditorLanguage</strong><span>../mono/libs/le-shared/redux/src/hooks/ai/useAIAssistant.tsx</span></summary>
+          <ul>
+            <li>useAIAssistant: ../mono/libs/le-shared/redux/src/hooks/ai/useAIAssistant.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsEnterpriseUser</strong><span>../mono/libs/le-shared/redux/src/hooks/ai/useAIAssistant.tsx</span></summary>
+          <ul>
+            <li>useAIAssistant: ../mono/libs/le-shared/redux/src/hooks/ai/useAIAssistant.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectItemWithJupyterBrowser</strong><span>../mono/libs/le-shared/redux/src/hooks/ai/useAIAssistant.tsx</span></summary>
+          <ul>
+            <li>useAIAssistant: ../mono/libs/le-shared/redux/src/hooks/ai/useAIAssistant.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCumulativeAssessment</strong><span>../mono/libs/le-shared/redux/src/hooks/useChallengeTracking.tsx</span></summary>
+          <ul>
+            <li>useChallengeTracking: ../mono/libs/le-shared/redux/src/hooks/useChallengeTracking.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsInCodeChallengeV2Variant</strong><span>../mono/libs/le-shared/redux/src/hooks/useChallengeTracking.tsx</span></summary>
+          <ul>
+            <li>useChallengeTracking: ../mono/libs/le-shared/redux/src/hooks/useChallengeTracking.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectCurrentSandbox</strong><span>../mono/libs/le-shared/redux/src/hooks/useSandboxTracking.tsx</span></summary>
+          <ul>
+            <li>useSandboxTracking: ../mono/libs/le-shared/redux/src/hooks/useSandboxTracking.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectTrackingPageName</strong><span>../mono/libs/le-shared/redux/src/hooks/useSandboxTracking.tsx</span></summary>
+          <ul>
+            <li>useSandboxTracking: ../mono/libs/le-shared/redux/src/hooks/useSandboxTracking.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsEnterpriseLEHeaderLocation</strong><span>../mono/libs/le-shared/redux/src/hooks/useIsEnterprise.tsx</span></summary>
+          <ul>
+            <li>useIsEnterprise: ../mono/libs/le-shared/redux/src/hooks/useIsEnterprise.tsx</li>
+          </ul>
+        </details>
+      
+
+        <details>
+          <summary><strong>selectIsEnterpriseApplication</strong><span>../mono/libs/le-shared/redux/src/hooks/useIsEnterprise.tsx</span></summary>
+          <ul>
+            <li>useIsEnterprise: ../mono/libs/le-shared/redux/src/hooks/useIsEnterprise.tsx</li>
+          </ul>
+        </details>
+      
+      </body>
+    </html>
+  
